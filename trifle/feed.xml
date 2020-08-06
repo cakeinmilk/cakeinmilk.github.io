@@ -62,5 +62,22 @@
       https://www.danielkitson.com/
       </description>
     </item>
+    <item>
+      <author></author>
+      <itunes:author></itunes:author>
+      <title>06th August 2020</title>
+      <pubDate>Thu, 06 Aug 2020 13:00:00 GMT</pubDate>
+      <enclosure url="https://cakeinmilk.github.io/trifle/audio/0608.mp3" type="audio/mpeg" length="61530112" />
+      <itunes:duration>01:25:27</itunes:duration>
+      <guid isPermaLink="false">cepod01</guid>
+      <itunes:explicit>no</itunes:explicit>
+      <description>
+      Originally broadcast on Resonance FM midnight - 1:30am 06/08/2020
+
+      https://www.resonancefm.com/
+
+      https://www.danielkitson.com/
+      </description>
+    </item>
   </channel>
 </rss>
