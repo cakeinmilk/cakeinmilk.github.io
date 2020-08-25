@@ -31,6 +31,23 @@
 	<item>
       <author></author>
       <itunes:author></itunes:author>
+      <title>25th August 2020</title>
+      <pubDate>Tue, 25 Aug 2020 13:00:00 GMT</pubDate>
+      <enclosure url="https://cakeinmilk.github.io/trifle/audio/2508.mp3" type="audio/mpeg" length="59609088" />
+      <itunes:duration>01:22:47</itunes:duration>
+      <guid isPermaLink="false">https://cakeinmilk.github.io/trifle/audio/2508.mp3</guid>
+      <itunes:explicit>no</itunes:explicit>
+      <description>
+      Originally broadcast on Resonance FM midnight - 1:30am 25/08/2020
+
+      https://www.resonancefm.com/
+
+      https://www.danielkitson.com/
+      </description>
+    </item>
+	<item>
+      <author></author>
+      <itunes:author></itunes:author>
       <title>21st August 2020</title>
       <pubDate>Fri, 21 Aug 2020 13:00:00 GMT</pubDate>
       <enclosure url="https://cakeinmilk.github.io/trifle/audio/2108.mp3" type="audio/mpeg" length="64524288" />
