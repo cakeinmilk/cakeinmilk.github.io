@@ -5,20 +5,21 @@
     <link>https://cakeinmilk.github.io/</link>
 	<atom:link rel="self" type="application/rss+xml"/>
     <description>Daniel Kitson's new, live breakfast show. Each week day in January. This is an unofficial feed.</description>
-    <pubDate>Sun, 01 Jan 2023 05:47:52 PST</pubDate>
-    <lastBuildDate>Sun, 01 Jan 2023 05:47:52 PST</lastBuildDate>
+    <pubDate>Sun, 01 Jan 2023 16:02:33 GMT</pubDate>
+    <lastBuildDate>Sun, 01 Jan 2023 16:02:33 GMT</lastBuildDate>
 	<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
 	 <image>
      <url>https://cakeinmilk.github.io/artwu2023/img/icon.jpg</url>
      <title>Daniel Kitson on Resonance 104.4 FM, January 2023</title>
      <link>https://cakeinmilk.github.io/</link>
     </image>
-  </channel>
       <item>
       <title>kitson.test.full</title>
       <guid isPermalink="false">https://dx3x.com/kitson/resonance-fm-2020/full/kitson.20200420.full.mp3</guid>
       <enclosure url="https://dx3x.com/kitson/resonance-fm-2020/full/kitson.20200420.full.mp3" length="102473471" type="audio/mp3"/>
-      <pubDate>Mon, 20 Apr 2020 06:04:54 PDT</pubDate>
+      <pubDate>Sun, 01 Jan 2023 16:02:55 GMT</pubDate>
 	  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
       </item>
+  </channel>
  </rss>
+ 
