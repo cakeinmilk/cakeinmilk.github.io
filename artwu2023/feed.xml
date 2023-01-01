@@ -8,4 +8,10 @@
     <lastBuildDate>Sun, 01 Jan 2023 05:47:52 PST</lastBuildDate>
     <atom:link rel="self" type="application/rss+xml"/>
   </channel>
+      <item>
+      <title>kitson.test.full</title>
+      <guid isPermalink="false">https://dx3x.com/kitson/resonance-fm-2020/full/kitson.20200420.full.mp3</guid>
+      <enclosure url="https://dx3x.com/kitson/resonance-fm-2020/full/kitson.20200420.full.mp3" length="102473471" type="audio/mp3"/>
+      <pubDate>Mon, 20 Apr 2020 06:04:54 PDT</pubDate>
+      </item>
  </rss>
