@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>A Reason To Wake Up, January 2023</title>
+    <link>https://cakeinmilk.github.io/</link>
+	<atom:link rel="self" type="application/rss+xml"/>
+	<language>en</language>
+	<itunes:explicit>no</itunes:explicit>
+    <description>Daniel Kitson's new, live breakfast show. Each week day in January. This is an unofficial feed.</description>
+    <pubDate>Sun, 01 Jan 2023 16:02:33 GMT</pubDate>
+    <lastBuildDate>Sun, 01 Jan 2023 16:02:33 GMT</lastBuildDate>
+	<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+	 <image>
+     <url>https://cakeinmilk.github.io/artwu2023/img/icon.jpg</url>
+     <title>A Reason To Wake Up, January 2023 [Edited]</title>
+     <link>https://cakeinmilk.github.io/</link>
+    </image>
+      <item>
+		  <title>artwu_2023_01_02</title>
+		  <guid isPermalink="false">https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_02.edit.mp3</guid>
+		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_02.edit.mp3" length="29450900" type="audio/mp3"/>
+		  <itunes:duration>40:54</itunes:duration>
+		  <description>
+		  Originally broadcast on ResonanceFM 7am - 9am 02/01/2023
+
+		  https://www.resonancefm.com/
+
+		  https://www.danielkitson.com/
+		  </description>
+		  <pubDate>Sun, 01 Jan 2023 10:15:55 GMT</pubDate>
+		  <itunes:explicit>no</itunes:explicit>
+		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+      </item>
+   <itunes:category text="Comedy"/>
+   <itunes:category text="Arts">
+	<itunes:category text="Performing Arts"/>
+   </itunes:category>
+  </channel>
+ </rss>
