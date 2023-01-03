@@ -13,7 +13,7 @@
 	 <image>
      <url>https://cakeinmilk.github.io/artwu2023/img/icon.jpg</url>
      <title>A Reason To Wake Up, January 2023 [Edited]</title>
-     <link>https://cakeinmilk.github.io/</link>
+     <link>https://cakeinmilk.github.io/artwu2023/img/icon.jpg</link>
     </image>
       <item>
 		  <title>artwu_2023_01_02</title>
@@ -28,7 +28,7 @@
 		  https://www.danielkitson.com/
 		  </description>
 		  <pubDate>Mon, 02 Jan 2023 10:15:55 GMT</pubDate>
-		  <itunes:explicit>no</itunes:explicit>
+		  <itunes:explicit>yes</itunes:explicit>
 		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
 		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
       </item>
@@ -45,7 +45,7 @@
 		  https://www.danielkitson.com/
 		  </description>
 		  <pubDate>Tue, 03 Jan 2023 10:35:55 GMT</pubDate>
-		  <itunes:explicit>no</itunes:explicit>
+		  <itunes:explicit>yes</itunes:explicit>
 		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
 		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
       </item>
