@@ -2,7 +2,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>A Reason To Wake Up, January 2023</title>
-    <link>https://cakeinmilk.github.io/</link>
+    <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
 	<language>en</language>
 	<itunes:explicit>no</itunes:explicit>
     <description>Daniel Kitson's new, live breakfast show. Each week day in January. This is an unofficial feed.</description>
@@ -17,17 +17,80 @@
       <item>
 		  <title>artwu_2023_01_02</title>
 		  <guid isPermaLink="false">79e55e51-46e6-44f6-a2f2-a0b5be6dea74</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_02-full.mp3" length="83544424" type="audio/mp3"/>
+		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_02.full.mp3" length="83544424" type="audio/mp3"/>
 		  <itunes:duration>01:56:02</itunes:duration>
 		  <description>
-		  Originally broadcast on ResonanceFM 7am - 9am 02/01/2023
+		  Originally broadcast on ResonanceFM 7am-9am, 02/01/2023
 
 		  https://www.resonancefm.com/
 
 		  https://www.danielkitson.com/
+		  
+		  Tracklist:
+
+			1. Yard Act - 100% Endurance
+			2. Anna B Savage - InFLUX
+			3. Bess Atwell - Co-op
+			4. Albertine Sarges - Free Today
+			5. Fake Dad - How Do I Cry?
+			6. Wet Leg - Wet Dream
+			7. LYR - Great Coat (Instrumental Version)
+			8. We Shall Over Come (Robag Wruhme RMX-Edit.22)
+			9. Charlotte Adigéry &amp; Bolis Pupul - Blenda
+			10. Orchestre Tout Puissant Marcel Duchamp - So Many Things (To Feel Guilty About)
+			11. Loyle Carner - Hate
+			12. Brian Eno &amp; David Byrne - Strange Overtones
+			13. Melt Yourself Down - Pray For Me I Don't Fit In
+			14. Robag Wruhme - Ende
+			15. Yard Act - Pour Another
+			16. Emanative &amp; Bex Burch - Disrupt #4
+			17. Matt Sweeney &amp; Bonnie "Prince" Billy - Resist the Urge
+			18. H. Hawkline - Suppression Street
+			19. Little Simz - Gorilla
+			20 Sti Nami - Bayer X
 		  </description>
 		  <pubDate>Mon, 02 Jan 2023 10:15:55 GMT</pubDate>
 		  <itunes:explicit>no</itunes:explicit>
+		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+      </item>
+	  <item>
+		  <title>artwu_2023_01_03</title>
+		  <guid isPermalink="false">79e55e51-46e6-44f6-a2f2-a0b5be6dea76</guid>
+		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_03.full.mp3" length="84729966" type="audio/mp3"/>
+		  <itunes:duration>01:57:40</itunes:duration>
+		  <description>
+		  Originally broadcast on ResonanceFM 7am-9am, 03/01/2023
+
+		  https://www.resonancefm.com/
+
+		  https://www.danielkitson.com/
+		  
+		  	Tracklist:
+
+			1. Robag Wruhme - K.T.B.
+			2. St. Vincent - Piggy 
+			3. LCD Soundsystem - new body rhumba (from the film White Noise)
+			4. Lewsberg - Six Hills
+			5. The Lucksmiths - Great Lengths
+			6. Oliver Sim - Romance With a Memory
+			7. Folly Group - Fewer Closer Friends
+			8. St. Vincent - Piggy 
+			9. Dee-Lite - Groove Is In The Heart
+			10. Albertine Sarges - The Girls
+			11. Iron &amp; Wine - The Trapeze Swinger
+			12. Tune-Yards - make it right.
+			13. Depeche Mode - Lilian (Robag Wruhme Slomoschen Kikker)
+			14. Sault - Up All Night
+			15. Nixer - People Feel
+			16. Wu-Lu - South (feat. Lex Amor)
+			17. Kings of Convenience - Love Is A Lonely Thing (feat. Feist)
+			18. The Postal Service - Such Great Heights
+			19. Villagers - Love Came with All That It Brings
+			20. LCD Soundsystem - Losing My Edge
+		  </description>
+		  <pubDate>Tue, 03 Jan 2023 10:36:54 GMT</pubDate>
+		  <itunes:explicit>yes</itunes:explicit>
 		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
 		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
       </item>
