@@ -66,6 +66,23 @@
 		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
 		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
       </item>
+	  <item>
+		  <title>artwu_2023_01_05</title>
+		  <guid isPermaLink="false">79e35e51-46e6-34f6-a2f4-a0b5be6dea78</guid>
+		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_05.edit.mp3" length="23771773" type="audio/mp3"/>
+		  <itunes:duration>30:00</itunes:duration>
+		  <description>
+		  Originally broadcast on ResonanceFM 7am-9am, 05/01/2023
+
+		  https://www.resonancefm.com/
+
+		  https://www.danielkitson.com/
+		  </description>
+		  <pubDate>Wed, 04 Jan 2023 10:00:12 GMT</pubDate>
+		  <itunes:explicit>yes</itunes:explicit>
+		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+      </item>
    <itunes:category text="Comedy"/>
    <itunes:category text="Arts">
 	<itunes:category text="Performing Arts"/>
