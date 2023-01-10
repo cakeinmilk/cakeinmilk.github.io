@@ -77,14 +77,14 @@
 			09. Deee-Lite - Groove Is In The Heart
 			10. Albertine Sarges - The Girls
 			11. Iron &amp; Wine - The Trapeze Swinger
-			12. Tune-Yards - make it right.
+			12. tUnE-yArDs - make it right.
 			13. Depeche Mode - Lilian (Robag Wruhme Slomoschen Kikker)
 			14. Sault - Up All Night
 			15. Nixer - People Feel
 			16. Wu-Lu - South (feat. Lex Amor)
 			17. Kings of Convenience - Love Is A Lonely Thing (feat. Feist)
 			18. The Postal Service - Such Great Heights
-			19. Villagers - Love Came with All That It Brings
+			19. Villagers - Love Came With All That It Brings
 			20. LCD Soundsystem - Losing My Edge
 		  
 		  https://www.resonancefm.com/
@@ -227,8 +227,8 @@
 	  <item>
 		  <title>artwu_2023_01_09</title>
 		  <guid isPermaLink="false">79e993f42-46e6-88f6-a2f2-a1b5bc6dea76</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_09.full.mp3" length="84894851" type="audio/mp3"/>
-		  <itunes:duration>01:57:54</itunes:duration>
+		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_09.full.mp3" length="86462824" type="audio/mp3"/>
+		  <itunes:duration>02:00:05</itunes:duration>
 		  <description>
 		  Originally broadcast on ResonanceFM 7am-9am, 09/01/2023
 		  
@@ -255,14 +255,56 @@
 			19. Goat - Do the Dance
 			20. Kevin Morby - Beautiful Strangers
 			21. Sananda Maitreya - Dance Little Sister
-			22. Tune-Yards - Cannonball
+			22. tUnE-yArDs - Cannonball
 
 		  https://www.resonancefm.com/
 
 		  https://www.danielkitson.com/
 		  </description>
 		  <pubDate>Mon, 09 Jan 2023 09:46:22 GMT</pubDate>
-		  <itunes:explicit>no</itunes:explicit>
+		  <itunes:explicit>yes</itunes:explicit>
+		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+      </item>
+	  <item>
+		  <title>artwu_2023_01_10</title>
+		  <guid isPermaLink="false">79e993f42-46e6-88f6-a1f0-a1b5bc6dea76</guid>
+		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_10.full.mp3" length="86201704" type="audio/mp3"/>
+		  <itunes:duration>01:59:43</itunes:duration>
+		  <description>
+		  Originally broadcast on ResonanceFM 7am-9am, 10/01/2023
+		  
+		  Tracklist:
+
+			01. John Grant - Pale Green Ghosts
+			02. Darren Hanlon - When You Go (Radio Edit)
+			03. Charlotte Adigéry - High Lights (Edit)
+			04. The Divine Comedy - Everybody Knows (Except You)
+			05. Dream Wife - So When You Gonna...
+			06. Withered Hand - Heart Heart
+			07. Emily Breeze - Ordinary Life (Radio Edit)
+			08. Maria Chiara Argiró - Greenarp (Terracassette Remix)
+			09. Astrel K - Is It It or Is It I?
+			10. Bonnie "Prince" Billy - The Best of Folks
+			11. Nadine Shah - Ladies for Babies (Goats for Love)
+			12. James Yorkston - Woozy With Cider (Jon Hopkins Remix)
+			13. Robag Wruhme - Hugendubel
+			14. Sault - Fight for Love
+			15. The Housemartins - The People Who Grinned Themselves To Death
+			16. Sneaks - True Killer
+			17. Arctic Monkeys - Fake Tales of San Francisco
+			18. The Archers Omnibus - Derek Underwood (hmm)
+			19. Kings of Convenience - I'd Rather Dance With You
+			20. Melt Yourself Down - Balance
+			21. LYR - Urban Myth #91
+			22. Loyle Carner - HGU 
+
+		  https://www.resonancefm.com/
+
+		  https://www.danielkitson.com/
+		  </description>
+		  <pubDate>Tue, 10 Jan 2023 10:33:19 GMT</pubDate>
+		  <itunes:explicit>yes</itunes:explicit>
 		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
 		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
       </item>
