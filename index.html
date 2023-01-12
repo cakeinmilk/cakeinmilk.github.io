@@ -5,15 +5,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 		<title>Kitson on ResonanceFM: an unofficial archive</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
 	<body>
+	
+		<audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+			<source type="audio/mp3" src="https://cakeinmilk.github.io/misc/audio/clearspot_2021_02_12.full.mp3">
+			Sorry, your browser does not support HTML5 audio.
+		</audio>
+	
 		<div class="mytabs">
-			<input type="radio" id="tabfree" name="mytabs">
-			<label for="tabfree">Misc.</label>
+			<input type="radio" id="tabmisc" name="mytabs">
+			<label for="tabmisc">Misc.</label>
 			<div class="tab">
 				<h3>Miscellaneous</h3>
 				<div class="divTable">
-					<div class="divTableBody">
+					<div class="divTableBody" id="plabvylist">
 						<div class="divTableRow">
 							<div class="divTableCell">&nbsp;</div>
 							<div class="divTableCell">Full <a href="https://cakeinmilk.github.io/misc/feed.xml"><img src="https://cakeinmilk.github.io/img/rss.png" /></a></div>
@@ -24,14 +31,14 @@
 							<div class="divTableCell">Clear Spot - 12th February, 2021</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/misc/audio/clearspot_2021_02_12.full.mp3">Full</a>&nbsp;(40.4Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/misc/audio/clearspot_2021_02_12.edit.mp3">Edit</a>&nbsp;(20.9Mb)</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/misc/tracklists/clearspot_2021_02_12.txt">Tracklist</a></div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/misc/tracklists/clearspot_2021_02_12.txt" download>Tracklist</a></div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<input type="radio" id="tabsilver" name="mytabs">
-			<label for="trifle">Trifle</label>
+			<input type="radio" id="tabtrifle" name="mytabs">
+			<label for="tabtrifle">Trifle</label>
 			<div class="tab">
 				<h3>Trifle, August 2020</h3>
 				<div class="divTable">
@@ -44,97 +51,97 @@
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">4th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/0408.mp3">Full</a>&nbsp;(58.3Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_04.full.mp3">Full</a>&nbsp;(58.3Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_04.edit.mp3">Edit</a>&nbsp;(26.5Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_04.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">5th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/0508.mp3">Full</a>&nbsp;(61.6Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_05.full.mp3">Full</a>&nbsp;(61.6Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_05.edit.mp3">Edit</a>&nbsp;(31.0Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_05.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">6th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/0608.mp3">Full</a>&nbsp;(58.6Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_06.full.mp3">Full</a>&nbsp;(58.6Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_06.edit.mp3">Edit</a>&nbsp;(23.1Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_06.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">7th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/0708.mp3">Full</a>&nbsp;(56.9Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_07.full.mp3">Full</a>&nbsp;(56.9Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_07.edit.mp3">Edit</a>&nbsp;(23.9Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_07.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">11th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/1108.mp3">Full</a>&nbsp;(61.2Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_11.full.mp3">Full</a>&nbsp;(61.2Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_11.edit.mp3">Edit</a>&nbsp;(27.2Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_11.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">12th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/1208.mp3">Full</a>&nbsp;(56.1Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_12.full.mp3">Full</a>&nbsp;(56.1Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_12.edit.mp3">Edit</a>&nbsp;(20.0Mb)</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_12.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">13th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/1308.mp3">Full</a>&nbsp;(59.7Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_13.full.mp3">Full</a>&nbsp;(59.7Mb)</div>
 							<div class="divTableCell">Edit</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_13.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">14th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/1408.mp3">Full</a>&nbsp;(61.7Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_14.full.mp3">Full</a>&nbsp;(61.7Mb)</div>
 							<div class="divTableCell">Edit</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_14.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">18th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/1808.mp3">Full</a>&nbsp;(60.6Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_18.full.mp3">Full</a>&nbsp;(60.6Mb)</div>
 							<div class="divTableCell">Edit</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_18.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">19th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/1908.mp3">Full</a>&nbsp;(61.7Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_19.full.mp3">Full</a>&nbsp;(61.7Mb)</div>
 							<div class="divTableCell">Edit</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_19.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">20th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/2008.mp3">Full</a>&nbsp;(61.9Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_20.full.mp3">Full</a>&nbsp;(61.9Mb)</div>
 							<div class="divTableCell">Edit</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_20.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">21st August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/2108.mp3">Full</a>&nbsp;(61.5Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_21.full.mp3">Full</a>&nbsp;(61.5Mb)</div>
 							<div class="divTableCell">Edit</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_21.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">25th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/2508.mp3">Full</a>&nbsp;(56.8Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_25.full.mp3">Full</a>&nbsp;(56.8Mb)</div>
 							<div class="divTableCell">Edit</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_25.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">26th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/2608.mp3">Full</a>&nbsp;(57.7Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_26.full.mp3">Full</a>&nbsp;(57.7Mb)</div>
 							<div class="divTableCell">Edit</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_26.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">27th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/2708.mp3">Full</a>&nbsp;(57.6Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_27.full.mp3">Full</a>&nbsp;(57.6Mb)</div>
 							<div class="divTableCell">Edit</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_27.txt">Tracklist</a></div>
 						</div>
 						<div class="divTableRow">
 							<div class="divTableCell">28th August</div>
-							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/2808.mp3">Full</a>&nbsp;(61.9Mb)</div>
+							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_28.full.mp3">Full</a>&nbsp;(61.9Mb)</div>
 							<div class="divTableCell">Edit</div>
 							<div class="divTableCell"><a href="https://cakeinmilk.github.io/trifle/tracklists/trifle_2020_08_28.txt">Tracklist</a></div>
 						</div>
@@ -142,8 +149,8 @@
 				</div>
 			</div>
 
-			<input type="radio" id="tabgold" name="mytabs" checked="checked">
-			<label for="artwu2023">ARTWU 2023</label>
+			<input type="radio" id="tabartwu2023" name="mytabs" checked="checked">
+			<label for="tabartwu2023">ARTWU 2023</label>
 			<div class="tab">
 				<h3>A Reason to Wake Up, January 2023</h3>
 				<div class="divTable">
@@ -222,72 +229,113 @@
 </html>
 
 <style>
-  body {
-    background: #ccc;
-    font-family: 'Roboto', sans-serif;
-}
-.mytabs {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 25px;
-}
-.mytabs input[type="radio"] {
-    display: none;
-}
-.mytabs label {
-    padding: 25px;
-    background: #e2e2e2;
-    font-weight: bold;
-}
+	body {
+		background: #ccc;
+		font-family: 'Roboto', sans-serif;
+	}
+	.mytabs {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 600px;
+		margin: 50px auto;
+		padding: 25px;
+	}
+	.mytabs input[type="radio"] {
+		display: none;
+	}
+	.mytabs label {
+		padding: 25px;
+		background: #e2e2e2;
+		font-weight: bold;
+	}
 
-.mytabs .tab {
-    width: 100%;
-    padding: 20px;
-    background: #fff;
-    order: 1;
-    display: none;
-}
-.mytabs .tab h2 {
-    font-size: 3em;
-}
+	.mytabs .tab {
+		width: 100%;
+		padding: 20px;
+		background: #fff;
+		order: 1;
+		display: none;
+	}
+	.mytabs .tab h2 {
+		font-size: 3em;
+	}
 
-.mytabs input[type='radio']:checked + label + .tab {
-    display: block;
-}
+	.mytabs input[type='radio']:checked + label + .tab {
+		display: block;
+	}
 
-.mytabs input[type="radio"]:checked + label {
-    background: #fff;
-}
+	.mytabs input[type="radio"]:checked + label {
+		background: #fff;
+	}
 
-.divTable{
-	display: table;
-	width: 100%;
-}
-.divTableRow {
-	display: table-row;
-}
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-}
-.divTableCell, .divTableHead {
-	border: 0px solid #999999;
-	display: table-cell;
-	padding: 3px 10px;
-}
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-	font-weight: bold;
-}
-.divTableFoot {
-	background-color: #EEE;
-	display: table-footer-group;
-	font-weight: bold;
-}
-.divTableBody {
-	display: table-row-group;
-}
+	.divTable{
+		display: table;
+		width: 100%;
+	}
+	.divTableRow {
+		display: table-row;
+	}
+	.divTableHeading {
+		background-color: #EEE;
+		display: table-header-group;
+	}
+	.divTableCell, .divTableHead {
+		border: 0px solid #999999;
+		display: table-cell;
+		padding: 3px 10px;
+	}
+	.divTableHeading {
+		background-color: #EEE;
+		display: table-header-group;
+		font-weight: bold;
+	}
+	.divTableFoot {
+		background-color: #EEE;
+		display: table-footer-group;
+		font-weight: bold;
+	}
+	.divTableBody {
+		display: table-row-group;
+	}
 </style>
+
+<script  type="text/javascript">
+var audio;
+var playlist;
+var tracks;
+var current;
+
+init();
+function init(){
+    current = 0;
+    audio = $('audio');
+    playlist = $('#playlist');
+    tracks = playlist.find('div a');
+    len = tracks.length - 1;
+    audio[0].volume = .50;
+    audio[0].play();
+    playlist.find('a').click(function(e){
+        e.preventDefault();
+        link = $(this);
+        current = link.parent().index();
+        run(link, audio[0]);
+    });
+    audio[0].addEventListener('ended',function(e){
+        current++;
+        if(current == len){
+            current = 0;
+            link = playlist.find('a')[0];
+        }else{
+            link = playlist.find('a')[current];    
+        }
+        run($(link),audio[0]);
+    });
+}
+function run(link, player){
+        player.src = link.attr('href');
+        par = link.parent();
+        par.addClass('active').siblings().removeClass('active');
+        audio[0].load();
+        audio[0].play();
+}
+</script>
