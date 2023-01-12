@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>A Reason To Wake Up, January 2023</title>
-    <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
-	<atom:link href="https://cakeinmilk.github.io/artwu2023/feed.xml" rel="self" type="application/rss+xml"/>
-	<language>en</language>
-	<itunes:explicit>no</itunes:explicit>
-    <description>Daniel Kitson's new, live breakfast show. Each week day in January. This is an unofficial feed.</description>
-    <pubDate>Sun, 01 Jan 2023 16:02:33 GMT</pubDate>
-    <lastBuildDate>Sun, 01 Jan 2023 16:02:33 GMT</lastBuildDate>
-	<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
-	 <image>
-     <url>https://cakeinmilk.github.io/artwu2023/img/icon.jpg</url>
-     <title>A Reason To Wake Up, January 2023</title>
-     <link>https://cakeinmilk.github.io/artwu2023/img/icon.jpg</link>
-    </image>
-      <item>
-		  <title>artwu_2023_01_02</title>
-		  <guid isPermaLink="false">79e55e51-46e6-44f6-a2f2-a0b5be6dea74</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_02.full.mp3" length="83544424" type="audio/mp3"/>
-		  <itunes:duration>01:56:02</itunes:duration>
-		  <description>
-		  Originally broadcast on ResonanceFM 7am-9am, 02/01/2023
+	<channel>
+		<title>A Reason To Wake Up, January 2023</title>
+		<link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+		<atom:link href="https://cakeinmilk.github.io/artwu2023/feed.xml" rel="self" type="application/rss+xml"/>
+		<language>en</language>
+		<itunes:explicit>yes</itunes:explicit>
+		<description>Daniel Kitson's new, live breakfast show. Each week day in January. This is an unofficial feed.</description>
+		<pubDate>Sun, 01 Jan 2023 16:02:33 GMT</pubDate>
+		<lastBuildDate>Sun, 01 Jan 2023 16:02:33 GMT</lastBuildDate>
+		<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+		<image>
+			<url>https://cakeinmilk.github.io/artwu2023/img/icon.jpg</url>
+			<title>A Reason To Wake Up, January 2023</title>
+			<link>https://cakeinmilk.github.io/artwu2023/img/icon.jpg</link>
+		</image>
+		<item>
+			<title>January 2, 2023</title>
+			<guid isPermaLink="false">79e55e51-46e6-44f6-a2f2-a0b5be6dea74</guid>
+			<enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_02.full.mp3" length="83544424" type="audio/mp3"/>
+			<itunes:duration>01:56:02</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 a.m., January 2, 2023
 
-		  Tracklist:
+			Tracklist:
 
 			01. Yard Act - 100% Endurance
 			02. Anna B Savage - InFLUX (Dan Deacon Fluxed Version)
@@ -47,24 +47,24 @@
 			20. Little Simz - Gorilla
 			21. Unknown
 			
-		  https://www.resonancefm.com/
+			https://www.resonancefm.com/
 
-		  https://www.danielkitson.com/
-		  </description>
-		  <pubDate>Mon, 02 Jan 2023 10:15:55 GMT</pubDate>
-		  <itunes:explicit>yes</itunes:explicit>
-		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
-		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
-      </item>
-	  <item>
-		  <title>artwu_2023_01_03</title>
-		  <guid isPermaLink="false">79e55e51-46e6-44f6-a2f2-a0b5be6dea76</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_03.full.mp3" length="84729966" type="audio/mp3"/>
-		  <itunes:duration>01:57:40</itunes:duration>
-		  <description>
-		  Originally broadcast on ResonanceFM 7am-9am, 03/01/2023
-		  
-		  Tracklist:
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Mon, 02 Jan 2023 10:15:55 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+			<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>January 3, 2023</title>
+			<guid isPermaLink="false">79e55e51-46e6-44f6-a2f2-a0b5be6dea76</guid>
+			<enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_03.full.mp3" length="84729966" type="audio/mp3"/>
+			<itunes:duration>01:57:40</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 a.m., January 3, 2023
+			
+			Tracklist:
 
 			01. Robag Wruhme - K.T.B.
 			02. St. Vincent - Piggy 
@@ -86,25 +86,25 @@
 			18. The Postal Service - Such Great Heights
 			19. Villagers - Love Came With All That It Brings
 			20. LCD Soundsystem - Losing My Edge
-		  
-		  https://www.resonancefm.com/
+			
+			https://www.resonancefm.com/
 
-		  https://www.danielkitson.com/
-		  </description>
-		  <pubDate>Tue, 03 Jan 2023 10:36:54 GMT</pubDate>
-		  <itunes:explicit>yes</itunes:explicit>
-		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
-		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
-      </item>
-	  <item>
-		  <title>artwu_2023_01_04</title>
-		  <guid isPermaLink="false">79e55e51-46e6-88f6-a2f2-a0b5bc6dea76</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_04.full.mp3" length="82404336" type="audio/mp3"/>
-		  <itunes:duration>01:54:27</itunes:duration>
-		  <description>
-		  Originally broadcast on ResonanceFM 7am-9am, 04/01/2023
-		  
-		  Tracklist:
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Tue, 03 Jan 2023 10:36:54 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+			<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>January 4, 2023</title>
+			<guid isPermaLink="false">79e55e51-46e6-88f6-a2f2-a0b5bc6dea76</guid>
+			<enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_04.full.mp3" length="82404336" type="audio/mp3"/>
+			<itunes:duration>01:54:27</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 a.m., January 4, 2023
+			
+			Tracklist:
 
 			01. The WAEVE - Something Pretty
 			02. Bodega - Doors
@@ -130,25 +130,25 @@
 			22. Jeffrey Lewis - You're Invited
 			23. Dan Deacon - When I Was Done Dying
 			24. My Latest Novel - The Reputation of Ross Francis
-		  
-		  https://www.resonancefm.com/
+			
+			https://www.resonancefm.com/
 
-		  https://www.danielkitson.com/
-		  </description>
-		  <pubDate>Wed, 04 Jan 2023 09:55:22 GMT</pubDate>
-		  <itunes:explicit>yes</itunes:explicit>
-		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
-		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
-      </item>
-	  <item>
-		  <title>artwu_2023_01_05</title>
-		  <guid isPermaLink="false">79e433f51-46e6-88f6-a2f2-a0b5bc6dea76</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_05.full.mp3" length="86693224" type="audio/mp3"/>
-		  <itunes:duration>02:00:24</itunes:duration>
-		  <description>
-		  Originally broadcast on ResonanceFM 7am-9am, 05/01/2023
-		  
-		  Tracklist:
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Wed, 04 Jan 2023 09:55:22 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+			<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>January 5, 2023</title>
+			<guid isPermaLink="false">79e433f51-46e6-88f6-a2f2-a0b5bc6dea76</guid>
+			<enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_05.full.mp3" length="86693224" type="audio/mp3"/>
+			<itunes:duration>02:00:24</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 a.m., January 5, 2023
+			
+			Tracklist:
 
 			01. Charlotte Adigéry &amp; Bolis Pupul - Ceci n'est pas un cliché
 			02. Super Furry Animals - Fire In My Heart
@@ -172,25 +172,25 @@
 			20. Oliver Sim - Romance With a Memory
 			21. Planningtorock - Beulah Loves Dancing
 			22. Kate Tempest - People's Faces
-		  
-		  https://www.resonancefm.com/
+			
+			https://www.resonancefm.com/
 
-		  https://www.danielkitson.com/
-		  </description>
-		  <pubDate>Thu, 05 Jan 2023 09:59:34 GMT</pubDate>
-		  <itunes:explicit>yes</itunes:explicit>
-		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
-		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
-      </item>
-	  <item>
-		  <title>artwu_2023_01_06</title>
-		  <guid isPermaLink="false">79e433f42-46e6-88f6-a2f2-a1b5bc6dea76</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_06.full.mp3" length="85994501" type="audio/mp3"/>
-		  <itunes:duration>01:59:26</itunes:duration>
-		  <description>
-		  Originally broadcast on ResonanceFM 7am-9am, 06/01/2023
-		  
-		  Tracklist:
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Thu, 05 Jan 2023 09:59:34 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+			<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>January 6, 2023</title>
+			<guid isPermaLink="false">79e433f42-46e6-88f6-a2f2-a1b5bc6dea76</guid>
+			<enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_06.full.mp3" length="85994501" type="audio/mp3"/>
+			<itunes:duration>01:59:26</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 a.m., January 6, 2023
+			
+			Tracklist:
 
 			01. Blood, Sweat &amp; Tears - You've Made Me So Very Happy
 			02. Kings of Convenience - The Weight Of My Words (Four Tet Remix)
@@ -215,24 +215,24 @@
 			21. Darren Hanlon - All These Things
 			22. Huw M - Worried Now Won't Be Worried Long
 
-		  https://www.resonancefm.com/
+			https://www.resonancefm.com/
 
-		  https://www.danielkitson.com/
-		  </description>
-		  <pubDate>Fri, 06 Jan 2023 10:37:26 GMT</pubDate>
-		  <itunes:explicit>yes</itunes:explicit>
-		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
-		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
-      </item>
-	  <item>
-		  <title>artwu_2023_01_09</title>
-		  <guid isPermaLink="false">79e993f42-46e6-88f6-a2f2-a1b5bc6dea76</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_09.full.mp3" length="86462824" type="audio/mp3"/>
-		  <itunes:duration>02:00:05</itunes:duration>
-		  <description>
-		  Originally broadcast on ResonanceFM 7am-9am, 09/01/2023
-		  
-		  Tracklist:
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Fri, 06 Jan 2023 10:37:26 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+			<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>January 9, 2023</title>
+			<guid isPermaLink="false">79e993f42-46e6-88f6-a2f2-a1b5bc6dea76</guid>
+			<enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_09.full.mp3" length="86462824" type="audio/mp3"/>
+			<itunes:duration>02:00:05</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 a.m., January 9, 2023
+			
+			Tracklist:
 
 			01. Snapped Ankles - I Want My Minutes Back
 			02. Pip Blom - Babies Are a Lie
@@ -257,24 +257,24 @@
 			21. Sananda Maitreya - Dance Little Sister
 			22. tUnE-yArDs - Cannonball
 
-		  https://www.resonancefm.com/
+			https://www.resonancefm.com/
 
-		  https://www.danielkitson.com/
-		  </description>
-		  <pubDate>Mon, 09 Jan 2023 09:46:22 GMT</pubDate>
-		  <itunes:explicit>yes</itunes:explicit>
-		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
-		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
-      </item>
-	  <item>
-		  <title>artwu_2023_01_10</title>
-		  <guid isPermaLink="false">79e993f42-46e6-88f6-a1f0-a1b5bc6dea76</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_10.full.mp3" length="86201704" type="audio/mp3"/>
-		  <itunes:duration>01:59:43</itunes:duration>
-		  <description>
-		  Originally broadcast on ResonanceFM 7am-9am, 10/01/2023
-		  
-		  Tracklist:
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Mon, 09 Jan 2023 09:46:22 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+			<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>January 10, 2023</title>
+			<guid isPermaLink="false">79e993f42-46e6-88f6-a1f0-a1b5bc6dea76</guid>
+			<enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_10.full.mp3" length="86201704" type="audio/mp3"/>
+			<itunes:duration>01:59:43</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 a.m., January 10, 2023
+			
+			Tracklist:
 
 			01. John Grant - Pale Green Ghosts
 			02. Darren Hanlon - When You Go (Radio Edit)
@@ -299,24 +299,24 @@
 			21. LYR - Urban Myth #91
 			22. Loyle Carner - HGU 
 
-		  https://www.resonancefm.com/
+			https://www.resonancefm.com/
 
-		  https://www.danielkitson.com/
-		  </description>
-		  <pubDate>Tue, 10 Jan 2023 10:33:19 GMT</pubDate>
-		  <itunes:explicit>yes</itunes:explicit>
-		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
-		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
-      </item>
-	  <item>
-		  <title>artwu_2023_01_11</title>
-		  <guid isPermaLink="false">79e113f42-46e6-88f6-a1f0-a1b5bc6dea76</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_11.full.mp3" length="86168163" type="audio/mp3"/>
-		  <itunes:duration>01:59:40</itunes:duration>
-		  <description>
-		  Originally broadcast on ResonanceFM 7am-9am, 11/01/2023
-		  
-		  Tracklist:
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Tue, 10 Jan 2023 10:33:19 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+			<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>January 11, 2023</title>
+			<guid isPermaLink="false">79e113f42-46e6-88f6-a1f0-a1b5bc6dea76</guid>
+			<enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_11.full.mp3" length="86168163" type="audio/mp3"/>
+			<itunes:duration>01:59:40</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 a.m., January 11, 2023
+			
+			Tracklist:
 
 			01. Sault - Up All Night
 			02. Decisive Pink - Haffmilch Holiday
@@ -342,24 +342,24 @@
 			22. Bodega - Territorial Call of the Female
 			23. Beastie Boys - Intergalactic
 
-		  https://www.resonancefm.com/
+			https://www.resonancefm.com/
 
-		  https://www.danielkitson.com/
-		  </description>
-		  <pubDate>Wed, 11 Jan 2023 13:00:13 GMT</pubDate>
-		  <itunes:explicit>yes</itunes:explicit>
-		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
-		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
-      </item>
-	  <item>
-		  <title>artwu_2023_01_12</title>
-		  <guid isPermaLink="false">79e113f12-46e6-88f6-a1f0-a1b5bc6dea74</guid>
-		  <enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_12.full.mp3" length="86116127" type="audio/mp3"/>
-		  <itunes:duration>01:59:36</itunes:duration>
-		  <description>
-		  Originally broadcast on ResonanceFM 7am-9am, 12/01/2023
-		  
-		  Tracklist:
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Wed, 11 Jan 2023 13:00:13 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+			<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>January 12, 2023</title>
+			<guid isPermaLink="false">79e113f12-46e6-88f6-a1f0-a1b5bc6dea74</guid>
+			<enclosure url="https://cakeinmilk.github.io/artwu2023/audio/artwu_2023_01_12.full.mp3" length="86116127" type="audio/mp3"/>
+			<itunes:duration>01:59:36</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 a.m., January 12, 2023
+			
+			Tracklist:
 
 			01. Captain Wiggle - Balsam Poplar (hmm)
 			02. David Byrne - Born Under Punches (The Heat Goes On) [Live]
@@ -386,18 +386,18 @@
 			23. Flock, Sarathy Korwar &amp; Bex Burch - Expand
 			24. LCD Soundsystem - Time to Get Away
 
-		  https://www.resonancefm.com/
+			https://www.resonancefm.com/
 
-		  https://www.danielkitson.com/
-		  </description>
-		  <pubDate>Thu, 12 Jan 2023 10:19:57 GMT</pubDate>
-		  <itunes:explicit>yes</itunes:explicit>
-		  <link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
-		  <itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
-      </item>
-   <itunes:category text="Comedy"/>
-   <itunes:category text="Arts">
-	<itunes:category text="Performing Arts"/>
-   </itunes:category>
-  </channel>
- </rss>
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Thu, 12 Jan 2023 10:19:57 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5ae9a85450000b9373000004</link>
+			<itunes:image href="https://cakeinmilk.github.io/artwu2023/img/icon.jpg"/>
+		</item>
+		<itunes:category text="Comedy"/>
+		<itunes:category text="Arts">
+			<itunes:category text="Performing Arts"/>
+		</itunes:category>
+	</channel>
+</rss>
