@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Trifle, August 2020 [Edited]</title>
+    <link>https://www.resonancefm.com/programmes/5f245c2850000b1ddf000001</link>
+	<atom:link href="https://cakeinmilk.github.io/artwu2023/edit.xml" rel="self" type="application/rss+xml"/>
+	<language>en</language>
+	<itunes:explicit>no</itunes:explicit>
+    <description>Daniel Kitson - late night, live. This is an unofficial feed.</description>
+    <pubDate>Sun, 01 Jan 2023 16:02:33 GMT</pubDate>
+    <lastBuildDate>Sun, 01 Jan 2023 16:02:33 GMT</lastBuildDate>
+	<itunes:image href="https://cakeinmilk.github.io/trifle/img/icon.jpg"/>
+	 <image>
+     <url>https://cakeinmilk.github.io/atrifle/img/icon.jpg</url>
+     <title>Trifle, August 2020 [Edited]</title>
+     <link>https://cakeinmilk.github.io/trifle/img/icon.jpg</link>
+    </image>
+      <item>
+		  <title>trifle_2020_08_04</title>
+		  <guid isPermaLink="false">79e55e51-46e6-44f6-a2f2-a0b5be6dea75</guid>
+		  <enclosure url="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_04.edit.mp3" length="27876957" type="audio/mp3"/>
+		  <itunes:duration>38:43</itunes:duration>
+		  <description>
+		  Originally broadcast on ResonanceFM Midnight-2am, August 4, 2020
+
+		  https://www.resonancefm.com/
+
+		  https://www.danielkitson.com/
+		  </description>
+		  <pubDate>Thu, 12 Jan 2023 15:55:55 GMT</pubDate>
+		  <itunes:explicit>yes</itunes:explicit>
+		  <link>https://www.resonancefm.com/programmes/5f245c2850000b1ddf000001</link>
+		  <itunes:image href="https://cakeinmilk.github.io/trifle/img/icon.jpg"/>
+      </item>
+	  <item>
+		  <title>trifle_2020_08_05</title>
+		  <guid isPermaLink="false">75e55e61-46e6-44f6-a2f2-a0b5be6dea75</guid>
+		  <enclosure url="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_05.edit.mp3" length="32515677" type="audio/mp3"/>
+		  <itunes:duration>45:09</itunes:duration>
+		  <description>
+		  Originally broadcast on ResonanceFM Midnight-2am, August 5, 2020
+
+		  https://www.resonancefm.com/
+
+		  https://www.danielkitson.com/
+		  </description>
+		  <pubDate>Thu, 12 Jan 2023 15:58:23 GMT</pubDate>
+		  <itunes:explicit>yes</itunes:explicit>
+		  <link>https://www.resonancefm.com/programmes/5f245c2850000b1ddf000001</link>
+		  <itunes:image href="https://cakeinmilk.github.io/trifle/img/icon.jpg"/>
+      </item>
+	  <item>
+		  <title>trifle_2020_08_06</title>
+		  <guid isPermaLink="false">75e66e61-46e6-44f6-a2f2-a0b5be6dea75</guid>
+		  <enclosure url="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_06.edit.mp3" length="24243220" type="audio/mp3"/>
+		  <itunes:duration>33:40</itunes:duration>
+		  <description>
+		  Originally broadcast on ResonanceFM Midnight-2am, August 6, 2020
+
+		  https://www.resonancefm.com/
+
+		  https://www.danielkitson.com/
+		  </description>
+		  <pubDate>Thu, 12 Jan 2023 15:59:26 GMT</pubDate>
+		  <itunes:explicit>yes</itunes:explicit>
+		  <link>https://www.resonancefm.com/programmes/5f245c2850000b1ddf000001</link>
+		  <itunes:image href="https://cakeinmilk.github.io/trifle/img/icon.jpg"/>
+      </item>
+	  <item>
+		  <title>trifle_2020_08_07</title>
+		  <guid isPermaLink="false">75e66e71-46e6-44f6-a2f2-a0b7be6dea75</guid>
+		  <enclosure url="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_07.edit.mp3" length="25096170" type="audio/mp3"/>
+		  <itunes:duration>34:51</itunes:duration>
+		  <description>
+		  Originally broadcast on ResonanceFM Midnight-2am, August 7, 2020
+
+		  https://www.resonancefm.com/
+
+		  https://www.danielkitson.com/
+		  </description>
+		  <pubDate>Thu, 12 Jan 2023 16:00:40 GMT</pubDate>
+		  <itunes:explicit>yes</itunes:explicit>
+		  <link>https://www.resonancefm.com/programmes/5f245c2850000b1ddf000001</link>
+		  <itunes:image href="https://cakeinmilk.github.io/trifle/img/icon.jpg"/>
+      </item>
+   <itunes:category text="Comedy"/>
+   <itunes:category text="Arts">
+	<itunes:category text="Performing Arts"/>
+   </itunes:category>
+  </channel>
+ </rss>
