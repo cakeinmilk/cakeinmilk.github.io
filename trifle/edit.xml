@@ -117,6 +117,40 @@
 			<link>https://www.resonancefm.com/programmes/5f245c2850000b1ddf000001</link>
 			<itunes:image href="https://cakeinmilk.github.io/trifle/img/icon.jpg"/>
 		</item>
+		<item>
+			<title>August 13, 2020</title>
+			<guid isPermaLink="false">75e61e12-46e6-44f6-a13f2-a0b5be6dea75</guid>
+			<enclosure url="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_13.edit.mp3" length="25805238" type="audio/mp3"/>
+			<itunes:duration>35:50</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM midnight to 1:30 a.m., August 13, 2020
+
+			https://www.resonancefm.com/
+
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Thu, 13 Jan 2023 20:08:35 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5f245c2850000b1ddf000001</link>
+			<itunes:image href="https://cakeinmilk.github.io/trifle/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>August 14, 2020</title>
+			<guid isPermaLink="false">75e41e12-46e6-14f6-a13f2-a0b5be6dea75</guid>
+			<enclosure url="https://cakeinmilk.github.io/trifle/audio/trifle_2020_08_14.edit.mp3" length="31418221" type="audio/mp3"/>
+			<itunes:duration>43:38</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM midnight to 1:30 a.m., August 14, 2020
+
+			https://www.resonancefm.com/
+
+			https://www.danielkitson.com/
+			</description>
+			<pubDate>Thu, 13 Jan 2023 20:18:25 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://www.resonancefm.com/programmes/5f245c2850000b1ddf000001</link>
+			<itunes:image href="https://cakeinmilk.github.io/trifle/img/icon.jpg"/>
+		</item>
 		<itunes:category text="Comedy"/>
 		<itunes:category text="Arts">
 			<itunes:category text="Performing Arts"/>
