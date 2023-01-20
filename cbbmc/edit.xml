@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>Captain Bang Bang’s Magic Castle, October 2016 [Edited]</title>
+		<link>https://resonancefm.com/programmes/57ea513850000b945d000001</link>
+		<atom:link href="https://cakeinmilk.github.io/cbbmc/edit.xml" rel="self" type="application/rss+xml"/>
+		<language>en</language>
+		<itunes:explicit>yes</itunes:explicit>
+		<description>A short series of radio shows by Daniel Kitson. This is an unofficial feed.</description>
+		<pubDate>Sun, 01 Jan 2023 16:02:33 GMT</pubDate>
+		<lastBuildDate>Sun, 01 Jan 2023 16:02:33 GMT</lastBuildDate>
+		<itunes:image href="https://cakeinmilk.github.io/cbbmc/img/icon.jpg"/>
+		<image>
+			<url>https://cakeinmilk.github.io/cbbmc/img/icon.jpg</url>
+			<title>Captain Bang Bang’s Magic Castle, October 2016 [Edited]</title>
+			<link>https://cakeinmilk.github.io/cbbmc/img/icon.jpg</link>
+		</image>
+		<item>
+			<title>October 2, 2016</title>
+			<guid isPermaLink="false">79e55e51-0610-44f6-a2f2-a0b5be6dea74</guid>
+			<enclosure url="https://cakeinmilk.github.io/cbbmc/audio/cbbmc_2016_10_02.edit.mp3" length="29256249" type="audio/mp3"/>
+			<itunes:duration>00:40:38</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 p.m., October 2, 2016
+			
+			<a href="https://www.resonancefm.com/">resonancefm.com</a>
+
+			<a href="https://www.danielkitson.com/">danielkitson.com</a>
+			</description>
+			<pubDate>Fri, 20 Jan 2023 14:37:55 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://resonancefm.com/programmes/57ea513850000b945d000001</link>
+			<itunes:image href="https://cakeinmilk.github.io/cbbmc/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>October 9, 2016</title>
+			<guid isPermaLink="false">79e55e51-0609-44f6-a2f2-a0b5be6dea74</guid>
+			<enclosure url="https://cakeinmilk.github.io/cbbmc/audio/cbbmc_2016_10_09.edit.mp3" length="32161483" type="audio/mp3"/>
+			<itunes:duration>00:44:40</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 p.m., October 9, 2016
+			
+			<a href="https://www.resonancefm.com/">resonancefm.com</a>
+
+			<a href="https://www.danielkitson.com/">danielkitson.com</a>
+			</description>
+			<pubDate>Fri, 20 Jan 2023 15:03:27 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://resonancefm.com/programmes/57ea513850000b945d000001</link>
+			<itunes:image href="https://cakeinmilk.github.io/cbbmc/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>October 16, 2016</title>
+			<guid isPermaLink="false">79e55e51-1609-44f6-a2f2-a0b5be6dea74</guid>
+			<enclosure url="https://cakeinmilk.github.io/cbbmc/audio/cbbmc_2016_10_16.edit.mp3" length="16258867" type="audio/mp3"/>
+			<itunes:duration>00:22:34</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 p.m., October 16, 2016
+			
+			<a href="https://www.resonancefm.com/">resonancefm.com</a>
+
+			<a href="https://www.danielkitson.com/">danielkitson.com</a>
+			</description>
+			<pubDate>Fri, 20 Jan 2023 15:16:33 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://resonancefm.com/programmes/57ea513850000b945d000001</link>
+			<itunes:image href="https://cakeinmilk.github.io/cbbmc/img/icon.jpg"/>
+		</item>
+		<item>
+			<title>October 23, 2016</title>
+			<guid isPermaLink="false">79e55e51-1623-44f6-a2f2-a0b5be6dea74</guid>
+			<enclosure url="https://cakeinmilk.github.io/cbbmc/audio/cbbmc_2016_10_23.edit.mp3" length="11212324" type="audio/mp3"/>
+			<itunes:duration>00:15:34</itunes:duration>
+			<description>
+			Originally broadcast on Resonance FM 7 to 9 p.m., October 23, 2016
+			
+			<a href="https://www.resonancefm.com/">resonancefm.com</a>
+
+			<a href="https://www.danielkitson.com/">danielkitson.com</a>
+			</description>
+			<pubDate>Fri, 20 Jan 2023 15:55:23 GMT</pubDate>
+			<itunes:explicit>yes</itunes:explicit>
+			<link>https://resonancefm.com/programmes/57ea513850000b945d000001</link>
+			<itunes:image href="https://cakeinmilk.github.io/cbbmc/img/icon.jpg"/>
+		</item>
+		<itunes:category text="Comedy"/>
+		<itunes:category text="Arts">
+			<itunes:category text="Performing Arts"/>
+		</itunes:category>
+	</channel>
+</rss>
