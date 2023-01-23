@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Quicksand:wght@300;400;700" rel="stylesheet">
+		<title>Kitson on Resonance FM: an unofficial archive</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	</head>
+	<body>
+	<!--
+		<audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+			<source type="audio/mp3" src="./misc/audio/clearspot_2021_02_12.full.mp3">
+			Sorry, your browser does not support HTML5 audio.
+		</audio>
+	-->
+		<div class="mytabs">
+
+			<input type="radio" id="tabartwu2020" name="mytabs">
+			<label for="tabartwu2020">ARTWU<br />2020</label>
+			<div class="tab">
+				<h3>A Reason to Wake Up, April 2020</h3>
+				<div class="blockquote">
+					<span class="italicText">Surprise! Daniel Kitson - live on air at 7am till 9am.</span>
+				</div>
+				<div class="divTable">
+					<div class="divTableBody" >
+						<div class="divTableHeader">
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">Full <a href="./artwu2020/feed.xml"><img src="./img/rss.png"  title="Full Show RSS"/></a></div>
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">&nbsp;</div>
+						</div>
+						<div class="divTableRow" id="playlist">
+							<div class="divTableCell">April 20</div>
+							<div class="divTableCell"><a href="https://archive.org/download/daniel-kitson-a-reason-to-wake-up-2020/Daniel%20Kitson%20-%20A%20Reason%20to%20Wake%20Up%20-%202020-04-20.mp3"><img src="./img/mp3.png" title="78.6MB"/></a></div>
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">&nbsp;</div>
+						</div>
+						<div class="divTableRow" id="playlist">
+							<div class="divTableCell">April 21</div>
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">&nbsp;</div>
+						</div>
+						<div class="divTableRow" id="playlist">
+							<div class="divTableCell">April 22</div>
+							<div class="divTableCell"><a href="https://archive.org/download/daniel-kitson-a-reason-to-wake-up-2020/Daniel%20Kitson%20-%20A%20Reason%20to%20Wake%20Up%20-%202020-04-22.mp3"><img src="./img/mp3.png" title="82.3MB"/></a></div>
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">&nbsp;</div>
+						</div>
+						<div class="divTableRow" id="playlist">
+							<div class="divTableCell">April 23</div>
+							<div class="divTableCell"><a href="https://archive.org/download/daniel-kitson-a-reason-to-wake-up-2020/Daniel%20Kitson%20-%20A%20Reason%20to%20Wake%20Up%20-%202020-04-23.mp3"><img src="./img/mp3.png" title="53.2MB"/></a></div>
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">&nbsp;</div>
+							<div class="divTableCell">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
+
+<style>
+	body {
+		background: #ccc;
+		font-family: 'Quicksand', sans-serif;
+	}
+	html {
+		overflow-y: overlay;
+	}
+	.mytabs {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 650px;
+		margin: 50px auto;
+		padding: 25px;
+	}
+	.mytabs input[type="radio"] {
+		display: none;
+	}
+	.mytabs label {
+		padding: 1em 1.5em 1em 1.5em;
+		background: #e2e2e2;
+		font-weight: bold;
+		font-size: 0.8em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.mytabs .tab {
+		width: 100%;
+		padding: 20px;
+		background: #fff;
+		order: 1;
+		display: none;
+	}
+	.mytabs .tab h2 {
+		font-size: 3em;
+	}
+	.mytabs input[type='radio']:checked + label + .tab {
+		display: block;
+	}
+	.mytabs input[type="radio"]:checked + label {
+		background: #fff;
+	}
+	.divTable{
+		display: table;
+		width: 100%;
+	}
+	.divTableRow {
+		display: table-row;
+		vertical-align: middle;
+	}
+	.divTableHeader {
+		display: table-row;
+	}
+	img {
+		vertical-align: middle;
+	}
+	.divTableRow:hover {
+		background:#e2e2e2;
+	}
+	.divTableColumn {
+		display: table-column;
+	}
+	.divTableHeading {
+		background-color: #EEE;
+		display: table-header-group;
+	}
+	.divTableCell, .divTableHead {
+		border: 0px solid #999999;
+		display: table-cell;
+		padding: 3px 10px;
+	}
+	.divTableHeading {
+		background-color: #EEE;
+		display: table-header-group;
+		font-weight: bold;
+	}
+	.divTableFoot {
+		background-color: #EEE;
+		display: table-footer-group;
+		font-weight: bold;
+	}
+	.divTableBody {
+		display: table-row-group;
+	}
+	.blockquote {
+		background: #f9f9f9;
+		border-left: 10px solid #ccc;
+		margin: 1.5em 10px;
+		padding: 0.5em 10px;
+		quotes: "\201C""\201D""\2018""\2019";
+		margin-left: 3em;
+		font-style: italic;
+	}
+	.blockquote:before {
+		color: #ccc;
+		content: open-quote;
+		font-size: 4em;
+		line-height: 0.1em;
+		margin-right: 0.25em;
+		vertical-align: -0.4em;
+	}
+	.italicText {
+		font-style: italic;
+		font-family: 'Roboto', sans-serif;
+	}
+</style>
+
+<script  type="text/javascript">
+var audio;
+var playlist;
+var tracks;
+var current;
+
+init();
+function init(){
+    current = 0;
+    audio = $('audio');
+    playlist = $('#playlist');
+    tracks = playlist.find('div a');
+    len = tracks.length - 1;
+    audio[0].volume = .50;
+    audio[0].play();
+    playlist.find('a').click(function(e){
+        e.preventDefault();
+        link = $(this);
+        current = link.parent().index();
+        run(link, audio[0]);
+    });
+    audio[0].addEventListener('ended',function(e){
+        current++;
+        if(current == len){
+            current = 0;
+            link = playlist.find('a')[0];
+        }else{
+            link = playlist.find('a')[current];    
+        }
+        run($(link),audio[0]);
+    });
+}
+function run(link, player){
+        player.src = link.attr('href');
+        par = link.parent();
+        par.addClass('active').siblings().removeClass('active');
+        audio[0].load();
+        audio[0].play();
+}
+</script>
