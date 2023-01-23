@@ -40,7 +40,7 @@
 			</div>
 			
 			<input type="radio" id="tabreso2013" name="mytabs">
-			<label for="tabreso2013">2013</label>
+			<label for="tabreso2013"><span><img src="./img/res_logo16.png" title="Resonance FM"/><br/>2013</span></label>
 			<div class="tab">
 				<h3>Daniel Kitson on Resonance FM, 2013</h3>
 				<div class="blockquote">
@@ -50,8 +50,8 @@
 					<div class="divTableBody" >
 						<div class="divTableHeader">
 							<div class="divTableCell">&nbsp;</div>
-							<div class="divTableCell">Full <a href="./reso2013/feed.xml"><img src="./img/rss.png" /></a></div>
-							<div class="divTableCell">Edits <a href="./reso2013/edit.xml"><img src="./img/rss.png" /></a></div>
+							<div class="divTableCell">Full <a href="./reso2013/feed.xml"><img src="./img/rss.png" title="Full Show RSS"/></a></div>
+							<div class="divTableCell">Edits <a href="./reso2013/edit.xml"><img src="./img/rss.png" title="Edited Show RSS"/></a></div>
 							<div class="divTableCell">&nbsp;</div>
 							<div class="divTableCell">&nbsp;</div>
 						</div>
@@ -77,8 +77,8 @@
 					<div class="divTableBody" >
 						<div class="divTableHeader">
 							<div class="divTableCell">&nbsp;</div>
-							<div class="divTableCell">Full <a href="./cbbmc/feed.xml"><img src="./img/rss.png" /></a></div>
-							<div class="divTableCell">Edits <a href="./cbbmc/edit.xml"><img src="./img/rss.png" /></a></div>
+							<div class="divTableCell">Full <a href="./cbbmc/feed.xml"><img src="./img/rss.png"  title="Full Show RSS"/></a></div>
+							<div class="divTableCell">Edits <a href="./cbbmc/edit.xml"><img src="./img/rss.png"  title="Edited Show RSS"/></a></div>
 							<div class="divTableCell">&nbsp;</div>
 							<div class="divTableCell">&nbsp;</div>
 						</div>
@@ -125,8 +125,8 @@
 					<div class="divTableBody">
 						<div class="divTableHeader">
 							<div class="divTableCell">&nbsp;</div>
-							<div class="divTableCell">Full <a href="https://cakeinmilk.github.io/trifle/feed.xml"><img src="https://cakeinmilk.github.io/img/rss.png" /></a></div>
-							<div class="divTableCell">Edits <a href="https://cakeinmilk.github.io/trifle/edit.xml"><img src="https://cakeinmilk.github.io/img/rss.png" /></a></div>
+							<div class="divTableCell">Full <a href="https://cakeinmilk.github.io/trifle/feed.xml"><img src="https://cakeinmilk.github.io/img/rss.png"  title="Full Show RSS"/></a></div>
+							<div class="divTableCell">Edits <a href="https://cakeinmilk.github.io/trifle/edit.xml"><img src="https://cakeinmilk.github.io/img/rss.png"  title="Edited Show RSS"/></a></div>
 							<div class="divTableCell">&nbsp;</div>
 							<div class="divTableCell">&nbsp;</div>
 							<div class="divTableCell">&nbsp;</div>
@@ -274,8 +274,8 @@
 					<div class="divTableBody">
 						<div class="divTableHeader">
 							<div class="divTableCell">&nbsp;</div>
-							<div class="divTableCell">Full <a href="./artwu2023/feed.xml"><img src="./img/rss.png" /></a></div>
-							<div class="divTableCell">Edits <a href="./artwu2023/edit.xml"><img src="./img/rss.png" /></a></div>
+							<div class="divTableCell">Full <a href="./artwu2023/feed.xml"><img src="./img/rss.png" title="Full Show RSS"/></a></div>
+							<div class="divTableCell">Edits <a href="./artwu2023/edit.xml"><img src="./img/rss.png" title="Edited Show RSS"/></a></div>
 							<div class="divTableCell">&nbsp;</div>
 							<div class="divTableCell">&nbsp;</div>
 							<div class="divTableCell">&nbsp;</div>
@@ -400,6 +400,14 @@
 							<div class="divTableCell"><a href="https://open.spotify.com/playlist/2NiEb7jYJ0UZpKBYIGsCaU?si=a1e6b3648cca4f8a"><img src="./img/spotify.png" title="Spotify Playlist"/></a></div>
 							<div class="divTableCell">&nbsp;</div>
 						</div>
+						<div class="divTableRow">
+							<div class="divTableCell">January 23</div>
+							<div class="divTableCell"><a href="./artwu2023/audio/artwu_2023_01_23.full.mp3"><img src="./img/mp3.png" title="54.8MB"/></a></div>
+							<div class="divTableCell"><a href="./artwu2023/audio/artwu_2023_01_23.edit.mp3"><img src="./img/mp3.png" title="12.3MB"/></a></div>
+							<div class="divTableCell"><a href=".tracklists/artwu_2023_01_23.txt"><img src="./img/m3u.png" title="Tracklist"/></a></div>
+							<div class="divTableCell"><a href="https://open.spotify.com/playlist/6AZA3ODWhX6owOAyB6tOob?si=e9faf3e930d840c3"><img src="./img/spotify.png" title="Spotify Playlist"/></a></div>
+							<div class="divTableCell">&nbsp;</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -445,15 +453,12 @@
 	.mytabs .tab h2 {
 		font-size: 3em;
 	}
-
 	.mytabs input[type='radio']:checked + label + .tab {
 		display: block;
 	}
-
 	.mytabs input[type="radio"]:checked + label {
 		background: #fff;
 	}
-
 	.divTable{
 		display: table;
 		width: 100%;
