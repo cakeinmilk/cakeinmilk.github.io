@@ -65,9 +65,7 @@ html, body {
 .dark-mode #toggle-dark-mode path:first-child {
   fill: white;
 }
-/*.header-center.dark-mode img {
-  filter: brightness(0.5) invert(1);
-}*/
+
 .mytabs label.dark-mode {
 	background-color: black;
 }
@@ -361,7 +359,7 @@ header .links {
   background-color: #f9f9f9;
   border: 1px solid #8d8741;
   border-radius: 6px;
-  color: #333;
+  color: black;
   cursor: pointer;
   font-size: 16px;
   margin: 5px;
@@ -375,6 +373,12 @@ header .links {
 
 .header-button:hover {
   background-color: #e6e6e6;
+}
+
+.header-button.dark-mode {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
 }
 
 header .icon {
@@ -799,6 +803,11 @@ border: solid white 1px;
   /* or use any other color you prefer */
 }
 
+.play-button.dark-mode {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
 
 .divTable{
 	display: table;
