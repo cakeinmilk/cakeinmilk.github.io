@@ -13,7 +13,7 @@ body {
 }
 overlayBg
 html {
-	overflow-y: overlay;
+	overflow-y: scroll;
 }
 
 audio {
@@ -151,7 +151,7 @@ body.dark-mode .mytabs input[type='radio']:checked + label::before {
 
 
 .divTableRow.dark-mode:hover {
-	background-color: light grey;
+	background-color: lightgray;
 	color: black;
 }
 .divTableRow.dark-mode:hover img {
@@ -201,7 +201,7 @@ body.dark-mode .mytabs input[type='radio']:checked + label::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 65%;
 }
 
 .header-top h1 {
@@ -263,7 +263,7 @@ header.scrolled {
   height: 40px;
   display: flex;
   flex-wrap: wrap;
-  align-items: left;
+  align-items: center;
 }
 
 header.scrolled h1 {
@@ -776,7 +776,7 @@ border: solid white 1px;
   width: 15px;
   height: 15px;
 }
-.ia-img {
+.icon-img {
   position: relative;
   width: 15px;
   height: 15px;
@@ -1007,8 +1007,4 @@ img {
 .italicText {
 	font-style: italic;
 	font-family: 'Roboto', sans-serif;
-}
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
 }
