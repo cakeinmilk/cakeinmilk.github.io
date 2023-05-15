@@ -773,9 +773,13 @@ border: solid white 1px;
   position: relative;
    /* Adjust this value to align the image vertically */
   background-color: #8d8741;
+  width: 15px;
+  height: 15px;
 }
 .ia-img {
   position: relative;
+  width: 15px;
+  height: 15px;
 }
 .clear{
     clear:both;
