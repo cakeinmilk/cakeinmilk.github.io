@@ -822,6 +822,13 @@ border: solid white 1px;
   vertical-align: middle;
   margin-bottom: 2px;
 }
+
+.divTableRow2 {
+  display: flex;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
 .divTableRow2 {
 	display: table-row;
 	vertical-align: middle;
