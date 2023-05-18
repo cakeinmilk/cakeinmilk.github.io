@@ -22,14 +22,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
       try {
         const content = await getData(fileUrl);
-        document.getElementById('overlayContent').innerText = content;
+        document.getElementById('txt-modal-content').innerText = content;
         document.getElementById('modal').style.display = 'block';
-        document.getElementById('overlayContent').style.display = 'block'; // Show the overlayContent
+        document.getElementById('txt-modal-content').style.display = 'block'; // Show the overlayContent
       } catch (error) {
         console.error('Error:', error);
-        document.getElementById('overlayContent').innerText = 'Error: Unable to load the content.';
+        document.getElementById('txt-modal-content').innerText = 'Error: Unable to load the content.';
         document.getElementById('modal').style.display = 'block';
-        document.getElementById('overlayContent').style.display = 'block'; // Show the overlayContent
+        document.getElementById('txt-modal-content').style.display = 'block'; // Show the overlayContent
       }
     });
   }
@@ -39,13 +39,13 @@ document.addEventListener('DOMContentLoaded', function () {
     var closeModal = document.getElementById('closeModal');
     closeModal.addEventListener('click', function () {
       document.getElementById('modal').style.display = 'none';
-      document.getElementById('overlayContent').style.display = 'none'; // Hide the overlayContent
+      document.getElementById('txt-modal-content').style.display = 'none'; // Hide the overlayContent
     });
 
     window.addEventListener('click', function (event) {
       if (event.target == document.getElementById('modal')) {
         document.getElementById('modal').style.display = 'none';
-        document.getElementById('overlayContent').style.display = 'none'; // Hide the overlayContent
+        document.getElementById('txt-modal-content').style.display = 'none'; // Hide the overlayContent
       }
     });
   });

@@ -542,7 +542,7 @@ border: solid white 1px;
   z-index: 998;
 }
 
-.modal {
+.text-modal {
   display: none;
   position: fixed;
   z-index: 999;
@@ -558,7 +558,7 @@ border: solid white 1px;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-#overlayContent {
+#txt-modal-content {
 	display: none;
 	position: fixed; /* Change this from absolute to fixed */
 	top: 50%;
@@ -584,7 +584,7 @@ border: solid white 1px;
 	color: black;
 }
 
-#overlayContent.dark-mode {
+#txt-modal-content.dark-mode {
   background-color: black;
   border: 1px solid white;
   border-left: 10px solid white;
