@@ -838,6 +838,20 @@ border: solid white 1px;
   text-align:right;
 }
 
+.divTableRow2 .shownotes a {
+  color: #8d8741;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.divTableRow2 .shownotes a:hover {
+  text-decoration: underline;
+}
+
+.divTableRow2 .shownotes a.dark-mode {
+	color: white;
+}
+
 .divTableHeader {
 	display: table-row;
 }
