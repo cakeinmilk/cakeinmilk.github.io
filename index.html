@@ -37,11 +37,13 @@
 				<div class="header-top">
 					<h1>Kitson on the Radio</h1>
 					<div class="links">
-					  <button class="header-button"  title="About" data-modal="about-modal">About</button>
-					  <button class="header-button"  title="Contact" data-modal="contact-modal">Contact</button>
+					  <button class="header-button" title="About" data-modal="about-modal">About</button>
+					  <button class="header-button" title="Missing" data-modal="missing-modal">Missing</button>
+					  <button class="header-button" title="Contact" data-modal="contact-modal">Contact</button>
 					</div>
 					<div class="scrolled-icons">
 						<div class="icon about-icon"></div>
+						<div class="icon missing-icon"></div>
 						<div class="icon contact-icon"></div>
 					</div>
 				</div>
@@ -63,7 +65,7 @@
 			<div>&nbsp;</div>
 			<div class="latest" data-version="4">
 			  <span class=latestHeader>Latest Update</span>
-			  <p>Artworks podcast & 20min edit filed <a href="#" id="radioLink">Misc</a></p>
+			  <p>All Triple R Graveyard edits & tracklists complete. Loose Cuts from 2003 filed under <a href="#" id="radioLink">Misc</a></p>
 			  <a href="#" class="close-latest" onclick="closeLatest();">
 				<img class="latest-img" src="/img/close.svg" alt="Close">
 			  </a>
@@ -104,6 +106,14 @@
 						<span>Various interviews and other ephemera.</span>
 					</div>
 					<div class="divTable">
+						<div class="divTableRowExpandButton">
+							<button title="Expand All" class="expand-all-button">
+								<span class="button-text">Expand All</span>
+								<svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+								</svg>
+							</button>
+						</div>
 						<div class="divTableBody" >
 						<div class="divTableRow no-hover">Aug 28, 2001 - Fringe Cuts</div>
 							<div class="divTableRow">
@@ -181,6 +191,45 @@
 							<div class="divTableRow2" style="display:none">
 									<div class="shownotes">
 										<a href="https://www.resonancefm.com/">Resonance FM</a> show hosted by Stewart Lee. Daniel Kitson and Richard Herring guest.<br>"The show went out on Sunday lunchtimes & featured an eclectic mix of music (largely from Stew's own personal collection) and at least one guest each week - often from the world of comedy."
+									</div>
+							</div>
+							<div class="divTableRow no-hover">Nov 08, 2003 - Loose Ends</div>
+							<div class="divTableRow">
+								<div class="divTableCell"></div>
+								<div class="divTableCell">
+									<button class="play-button" data-src="https://archive.org/download/daniel-kitson-misc-radio/2003-11-08_-_Loose_Ends.mp3">COMPLETE
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+										<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+										</svg>
+									</button>
+								</div>
+								<div class="divTableCell">
+									<button class="play-button" data-src="https://archive.org/download/daniel-kitson-misc-radio-edited/2003-11-08_-_Loose_Ends-edit.mp3">EDITED
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+										<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+										</svg>
+									</button>
+								</div>
+								<div class="divTableCell">
+									<!--<a href="" class="fileLink"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a>-->
+								</div>
+								<div class="divTableCell">
+									<!--<a href=""><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a>-->
+								</div>
+								<div class="divTableCell">
+									<button class="expand-button" title="Show Notes" aria-expanded="false">
+										<span class="expand-container">
+										<img class="notes-img" alt="Notes" src="./img/notes.svg">
+										  <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+											<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+										  </svg>
+										</span>
+									</button>
+								</div>
+							</div>
+							<div class="divTableRow2" style="display:none">
+									<div class="shownotes">
+										<a href="https://www.bbc.co.uk/programmes/b006qjym">BBC Radio 4</a> show hosted by Ned Sherrin.<br>"Ned Sherrin presents another mix of music, comedy and Conversation"<br>Guests are Lynne Truss, Rob Liddle, Howard Jacobson, Daniel Kitson, Richard Bacon (interviewed by Nina Conti & Monk). Music from Katie Melua and Tangala.
 									</div>
 							</div>
 							<div class="divTableRow no-hover">May 09, 2006 - The Conversation Hour</div>
@@ -611,10 +660,21 @@
 						 </div>
 					</div>
 					<div style="clear:both;"></div>
+					<div class="disclaimer">
+						<span>Disclaimer: The audio content provided may contain explicit language that may no longer be considered acceptable or appropriate by today's standards. Listener discretion is advised.</span>
+					</div>
 					<div class="blockquote">
 						<span class="italicText">Daniel Kitson's Listening Club - 01:30 - 04:30am. Early morning or a late night, Perrier Award winning wag Kitson guards the Resonance FM graveyard with stealth and a whacking great lump of pith and strictly no fey indie records. Actually, that last bit is a lie Daniel's show is crammed full of fey indie and alt country.</span>
 					</div>
 					<div class="divTable">
+						<div class="divTableRowExpandButton">
+							<button title="Expand All" class="expand-all-button">
+								<span class="button-text">Expand All</span>
+								<svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+								</svg>
+							</button>
+						</div>
 						<div class="divTableBody" >
 							<div class="divTableRow">
 								<div class="divTableCell">Jan 10, 2006</div>
@@ -770,7 +830,7 @@
 							<div class="divTableRow">
 								<div class="divTableCell">Oct 23, 2006</div>
 								<div class="divTableCell">
-									<button title="33.3MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-listening-club/Listening%20Club%20-%202006-10-23.mp3">COMPLETE
+									<button title="148.3MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-listening-club/Listening%20Club%20-%202006-10-23.mp3">COMPLETE
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
 										<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
 										</svg>
@@ -790,16 +850,34 @@
 							<div class="divTableRow">
 								<div class="divTableCell">Oct 31, 2006</div>
 								<div class="divTableCell">
-									<button title="35.4MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-listening-club/Listening%20Club%20-%202006-10-31.mp3">COMPLETE
+									<button title="182.5MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-listening-club/Listening%20Club%20-%202006-10-31.mp3">COMPLETE
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
 										<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
 										</svg>
 									</button>
 								</div>
-								<div class="divTableCell">&nbsp;</div>
-								<div class="divTableCell"><!--<a href="./tracklists/lc/lc_2006_10_23.txt" class="fileLink"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a>--></div>
-								<div class="divTableCell"><!--<a href="https://open.spotify.com/playlist/5rp4p4MO6ubO5nxrGJz1QC?si=81feebefd8124163"><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a>--></div>
-								<div class="divTableCell">&nbsp;</div>
+								<div class="divTableCell">
+									<button title="60.5MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-listening-club-edited/Listening%20Club%20-%202006-10-31-cut.mp3">EDITED
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+										<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+										</svg>
+									</button>
+								</div>
+								<div class="divTableCell"><a href="./tracklists/lc/lc_2006_10_31.txt" class="fileLink-pb"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a></div>
+								<div class="divTableCell"><a href="https://open.spotify.com/playlist/0bGCn63kwWs46XWBYprgWp?si=8c00088c05a34eef"><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a></div>
+								<div class="divTableCell">
+									<button class="expand-button" title="Show Notes" aria-expanded="false">
+										<span class="expand-container">
+										<img class="notes-img" alt="Notes" src="./img/notes.svg">
+										  <svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+											<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+										  </svg>
+										</span>
+									</button>
+								</div>
+							</div>
+							<div class="divTableRow2" style="display:none">
+							  <div class="shownotes">Daniel mistakenly attributes every song to Pat Benetar.</div>
 							</div>
 							<div class="divTableRow">
 								<div class="divTableCell">Jan 16, 2007</div>
@@ -899,11 +977,22 @@
 						 </div>
 					</div>
 					<div style="clear:both;"></div>
+					<div class="disclaimer">
+						<span>Disclaimer: The audio content provided may contain explicit language that may no longer be considered acceptable or appropriate by today's standards. Listener discretion is advised.</span>
+					</div>
 					<div class="subdate">Triple R Graveyard Shift, 2007-2010</div>
 					<div class="blockquote2">
 						<span>A space for new and emerging broadcasters on Triple R.</span>
 					</div>
 					<div class="divTable">
+						<div class="divTableRowExpandButton">
+							<button title="Expand All" class="expand-all-button">
+								<span class="button-text">Expand All</span>
+								<svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+								</svg>
+							</button>
+						</div>
 						<div class="divTableBody" >
 							<div class="divTableRow">
 								<div class="divTableCell">Apr 09, 2007</div>
@@ -914,23 +1003,18 @@
 										</svg>
 									</button>
 								</div>
-								<div class="divTableCell"><!--
-									<button title="43.6MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-triple-r-edit/Triple_R_Graveyard_-_2007-04-10-cut.mp3">EDITED
+								<div class="divTableCell">
+									<button title="60.5MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-triple-r-edit/Triple_R_Graveyard_-_2007-04-09-cut.mp3">EDITED
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
 										<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
 										</svg>
-									</button>-->
+									</button>
 								</div>
 								<div class="divTableCell">
-									<!--
-									<a href="./tracklists/triple-r/3r_graveyard_2007_04_10.txt" class="fileLink"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a>
-									-->
+									<a href="./tracklists/triple-r/3r_graveyard_2007_04_09.txt" class="fileLink"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a>
 								</div>
 								<div class="divTableCell">
-									<!--
-									<a href="https://open.spotify.com/playlist/1p550SNgdYOAyVVOVo4Vd8?si=bf8bcb4ab9424dec"><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a>
-									<a href="https://onemoregrain.bandcamp.com/track/nine-standards-rigg-daniel-patrick-quinn-2004"><img class="icon-img" src="./img/bandcamp.svg" title="Bandcamp"></a>
-									-->
+									<a href="https://open.spotify.com/playlist/4yuss4YgkjRV31PPpRIohE?si=75125c11a25d45c4"><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a>
 								</div>
 								<div class="divTableCell">
 									<button class="expand-button" title="Show Notes" aria-expanded="false">
@@ -996,23 +1080,19 @@
 										</svg>
 									</button>
 								</div>
-								<div class="divTableCell"><!--
-									<button title="43.6MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-triple-r-edit/Triple_R_Graveyard_-_2007-04-10-cut.mp3">EDITED
+								<div class="divTableCell">
+									<button title="47.8MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-triple-r-edit/Triple_R_Graveyard_-_2007-04-17-cut.mp3">EDITED
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
 										<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
 										</svg>
-									</button>-->
+									</button>
 								</div>
 								<div class="divTableCell">
-									<!--
-									<a href="./tracklists/triple-r/3r_graveyard_2007_04_10.txt" class="fileLink"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a>
-									-->
+									<a href="./tracklists/triple-r/3r_graveyard_2007_04_17.txt" class="fileLink"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a>
 								</div>
 								<div class="divTableCell">
-									<!--
-									<a href="https://open.spotify.com/playlist/1p550SNgdYOAyVVOVo4Vd8?si=bf8bcb4ab9424dec"><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a>
-									<a href="https://onemoregrain.bandcamp.com/track/nine-standards-rigg-daniel-patrick-quinn-2004"><img class="icon-img" src="./img/bandcamp.svg" title="Bandcamp"></a>
-									-->
+									<a href="https://open.spotify.com/playlist/0oDhkJbuAmMyNyjwLo4kKr?si=8d2e75f1888a4504"><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a>
+									<a href="https://andersgriffen.bandcamp.com/track/klutter"><img class="icon-img" src="./img/bandcamp.svg" title="Bandcamp"></a>
 								</div>
 								<div class="divTableCell">
 									<button class="expand-button" title="Show Notes" aria-expanded="false">
@@ -1077,23 +1157,18 @@
 										</svg>
 									</button>
 								</div>
-								<div class="divTableCell"><!--
-									<button title="43.6MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-triple-r-edit/Triple_R_Graveyard_-_2007-04-10-cut.mp3">EDITED
+								<div class="divTableCell">
+									<button title="41.5MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-triple-r-edit/Triple_R_Graveyard_-_2007-04-24-cut.mp3">EDITED
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
 										<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
 										</svg>
-									</button>-->
+									</button>
 								</div>
 								<div class="divTableCell">
-									<!--
-									<a href="./tracklists/triple-r/3r_graveyard_2007_04_10.txt" class="fileLink"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a>
-									-->
+									<a href="./tracklists/triple-r/3r_graveyard_2007_04_24.txt" class="fileLink"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a>
 								</div>
 								<div class="divTableCell">
-									<!--
-									<a href="https://open.spotify.com/playlist/1p550SNgdYOAyVVOVo4Vd8?si=bf8bcb4ab9424dec"><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a>
-									<a href="https://onemoregrain.bandcamp.com/track/nine-standards-rigg-daniel-patrick-quinn-2004"><img class="icon-img" src="./img/bandcamp.svg" title="Bandcamp"></a>
-									-->
+									<a href="https://open.spotify.com/playlist/2TtztyTobpIjJgCL7dk507?si=3cb2911486de4eb6"><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a>
 								</div>
 								<div class="divTableCell">
 									<button class="expand-button" title="Show Notes" aria-expanded="false">
@@ -1120,23 +1195,19 @@
 										</svg>
 									</button>
 								</div>
-								<div class="divTableCell"><!--
-									<button title="43.6MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-triple-r-edit/Triple_R_Graveyard_-_2007-04-10-cut.mp3">EDITED
+								<div class="divTableCell">
+									<button title="39.9MB" class="play-button" data-src="https://archive.org/download/daniel-kitson-triple-r-edit/Triple_R_Graveyard_-_2007-04-25-cut.mp3">EDITED
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
 										<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
 										</svg>
-									</button>-->
+									</button>
 								</div>
 								<div class="divTableCell">
-									<!--
-									<a href="./tracklists/triple-r/3r_graveyard_2007_04_10.txt" class="fileLink"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a>
-									-->
+									<a href="./tracklists/triple-r/3r_graveyard_2007_04_25.txt" class="fileLink"><img class="icon-img" src="./img/m3u.svg" title="Tracklist"></a>
 								</div>
 								<div class="divTableCell">
-									<!--
-									<a href="https://open.spotify.com/playlist/1p550SNgdYOAyVVOVo4Vd8?si=bf8bcb4ab9424dec"><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a>
-									<a href="https://onemoregrain.bandcamp.com/track/nine-standards-rigg-daniel-patrick-quinn-2004"><img class="icon-img" src="./img/bandcamp.svg" title="Bandcamp"></a>
-									-->
+									<a href="https://open.spotify.com/playlist/5AM72Jjhs13bPJ945slYNg?si=b4b8af7c1ab743b9"><img class="icon-img" src="./img/spotify.svg" title="Spotify Playlist"></a>
+									<a href="https://joannanewsom.bandcamp.com/track/clam-crab-cockle-cowrie-1"><img class="icon-img" src="./img/bandcamp.svg" title="Bandcamp"></a>
 								</div>
 								<div class="divTableCell">
 									<button class="expand-button" title="Show Notes" aria-expanded="false">
@@ -1431,6 +1502,14 @@
 					</div>
 					<div class="divTable">
 						<div class="divTableBody" >
+							<div class="divTableRowExpandButton">
+								<button title="Expand All" class="expand-all-button">
+									<span class="button-text">Expand All</span>
+									<svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+										<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+									</svg>
+								</button>
+							</div>
 							<div class="divTableRow">
 								<div class="divTableCell">Oct 19, 2007</div>
 								<div class="divTableCell">
@@ -2409,6 +2488,14 @@
 						</div>
 					</div>
 					<div class="divTable">
+						<div class="divTableRowExpandButton">
+							<button title="Expand All" class="expand-all-button">
+								<span class="button-text">Expand All</span>
+								<svg class="expand-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+								</svg>
+							</button>
+						</div>
 						<div class="divTableBody" >
 							<div class="divTableRow">
 								<div class="divTableCell">May 8</div>
@@ -3850,14 +3937,54 @@
 	  </div>
 	</div>
 
+	<div class="headlinks-modal" id="missing-modal">
+	  <div class="headlinks-modal-content">
+		<span class="close-button">
+		  <img class="headlinks-img" src="/img/close.svg" alt="Close">
+		</span>
+		<h3>Missing</h3>
+			<br>
+			<p><b>Mar 27, 1996 - BBC Radio 1 - Evening Session</b><br>
+			"Jo Whiley and Steve Lamacq have the new music first, and more on Family Affair, courtesy of 1995 Open Mic Finalist Daniel Kitson."
+			BBC do not have the complete programme, only the tracks played during the session.</p>
+
+			<p><b>Aug 28, 2001 - Fringe Cuts</b><br>
+			Clip exists of short set introduced by Ross Noble. Is the full show out there?</p>
+
+			<p><b>2003 - Unknown Date - Xfm - Jimmy Carr [Interview]</b><br>
+			Xfm have confirmed they don't hold any archives.</p>
+
+			<p><b>2003 - Unknown Date - talkSPORT - Ian Collins [Interview]</b><br>
+			Neither talkSPORT nor Ian Collins have a copy of this. "Flattered he did it with us and I remember him being superb."</p>
+
+			<p><b>2005 - Unknown Dates - Triple R - Graveyard Shift</b><br>
+			<b>April 17, 18, 19, 24, 25, May 1, 2, 2006 - Triple R - Graveyard Shift</b><br>
+			Triple R have confirmed that none of these shows were archived. A recording of at least one 2006 show is known to exist.</p>
+
+			<p><b>Sep 23, 2007 - ABC Radio National - Artworks</b><br>
+			Stream was available at <a href="https://www.abc.net.au/radionational/archived/artworks/daniel-kitson/3220212">https://www.abc.net.au/radionational/archived/artworks/daniel-kitson/3220212</a></p>
+
+			<p><b>Jan 14, 2010 - Triple J - Tom and Alex - The Breakfast Show [Interview]</b><br>
+			Original file was located at <a href="http://mpegmedia.abc.net.au/triplej/tomalex/ta_2010_01_14.mp3">http://mpegmedia.abc.net.au/triplej/tomalex/ta_2010_01_14.mp3</a></p>
+
+			<p><b>Mar 27, 2012 - Triple R - Breakfasters [13:31 segment]</b><br>
+			Exists behind subscriber paywall at <a href="https://www.rrr.org.au/on-demand/archives/723-daniel-kitson-breakfasters">https://www.rrr.org.au/on-demand/archives/723-daniel-kitson-breakfasters</a></p>
+
+			<p><b>Oct 13, 2013 - FBi Radio - Versus podcast - Judaism VS Australia (with Daniel Kitson)</b><br>
+			Podcast on archive.org is marked as Restricted: <a href="https://archive.org/details/podcast_versus-on-fbi-radio_judaism-vs-australia-with-dan_1000405446010">https://archive.org/details/podcast_versus-on-fbi-radio_judaism-vs-australia-with-dan_1000405446010</a></p>
+			<div class="contact-container">
+			  <img src="/img/contact.svg" alt="Contact me"> <a href="mailto:radiokitson@gmail.com">radiokitson@gmail.com</a>
+			</div>
+	  </div>
+	</div>
+
 	<div class="headlinks-modal" id="contact-modal">
 	  <div class="headlinks-modal-content">
 		<span class="close-button">
 		  <img class="headlinks-img" src="/img/close.svg" alt="Close">
 		</span>
 		<h3>Contact</h3>
-			<p>I've tried to make the site as easy to use and as accessible as possible, but feedback is most welcome.</p>
-			<p>If you happen to have any radio recordings which aren't listed, I'd really appreciate a heads up. Similarly if you have the time or the inclination to create track listings for those items which don't yet have them, please get in touch.</p>
+			<p>I've tried to make the site as easy to use and as accessible as possible, but feedback, corrections, and comments are all very welcome. Similarly if you have the time or the inclination to create track listings or Notes for those items which don't yet have them, please get in touch1</p>
 			<div class="contact-container">
 			  <img src="/img/contact.svg" alt="Contact me"> <a href="mailto:radiokitson@gmail.com">radiokitson@gmail.com</a>
 			</div>
