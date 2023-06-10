@@ -491,6 +491,20 @@ footer {
   font-size: 11px;
 }
 
+.blockquote a {
+  color: #8d8741;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blockquote a.dark-mode {
+	color: white;
+}
+
+.blockquote a:hover {
+  text-decoration: underline;
+}
+
 .footer a {
   color: #8d8741;
   text-decoration: none;
