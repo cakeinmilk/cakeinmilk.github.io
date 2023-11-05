@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
 const toggleDarkModeSVG = document.getElementById("toggle-dark-mode");
-const contentDivs = document.querySelectorAll(".mytabs, .tab, .blockquote, .blockquote2, .divTableRow, .header-center, .header, #txt-modal-content, .scrolled-icons, .latest, .close-latest, .divTableRow:hover, .expand-button, .expand-icon, .footer a, .play-button, .play-button img, .expand-all-button, .headlinks-modal-content, .header-button, .stopandhidebtn");
+const contentDivs = document.querySelectorAll(".mytabs, tabs-container, .tab, .blockquote, .blockquote2, .divTableRow, .header-center, .header, #txt-modal-content, .scrolled-icons, .latest, .close-latest, .divTableRow:hover, .expand-button, .expand-icon, .footer a, .play-button, .play-button img, .expand-all-button, .headlinks-modal-content, .header-button, .stopandhidebtn");
 
 // Check if user has browser set to use dark mode
 const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
