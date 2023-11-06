@@ -815,6 +815,7 @@ border: solid white 1px;
 	border-top-left-radius: 0;
 	order: 1;
 	display: none;
+	border-top: 1px solid blue; /*mew*/
 }
 .mytabs .tab h2 {
 	font-size: 3em;
@@ -846,7 +847,7 @@ border: solid white 1px;
 	flex-wrap: wrap;
 	max-width: 750px;
 	margin: 20px auto;
-	padding: 25px;
+	padding: 15px; /*25*/
 }
 .tabs-container input[type="radio"] {
 	display: none;
