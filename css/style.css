@@ -73,7 +73,7 @@ html, body {
 	background-color: black;
 }
 .tabs-container.dark-mode input[type="radio"]:checked + label {
-	background-color: black;
+	background-color: yellow; /* test */
 	border-left: 1px solid white;
 	border-right: 1px solid white;
 	border-top: 1px solid white;
@@ -824,10 +824,10 @@ border: solid white 1px;
 	border-top-left-radius: 0;
 	order: 1;
 	display: none;
-	border-top: 2px #659dbd; /*mew*/
-	border-right: 2px #659dbd; /*mew*/
-	border-left: 2px #659dbd; /*mew*/
-	border-bottom: 2px #659dbd; /*mew*/
+	border-top: 2px solid #659dbd; /*mew*/
+	border-right: 2px solid #659dbd; /*mew*/
+	border-left: 2px solid #659dbd; /*mew*/
+	border-bottom: 2px solid #659dbd; /*mew*/
 }
 .mytabs .tab h2 {
 	font-size: 3em;
@@ -849,9 +849,9 @@ border: solid white 1px;
 	-moz-border-radius-topright: 6px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
-	border-left: 2px #659dbd; /*mew*/
-	border-right: 2px #659dbd; /*mew*/
-	border-top: 2px #659dbd; /*mew*/
+	border-left: 2px solid #659dbd; /*mew*/
+	border-right: 2px solid #659dbd; /*mew*/
+	border-top: 2px solid #659dbd; /*mew*/
 }
 
 .tabs-container {
