@@ -72,14 +72,14 @@ html, body {
 .tabs-container input.dark-mode {
 	background-color: black;
 }
-.tabs-container.dark-mode input[type="radio"]:checked + label {
-	background-color: yellow; /* test */
+.tabs-container.dark-mode input[type="radio"]:checked /*+ label*/ {
+	background-color: black;
 	border-left: 1px solid white;
 	border-right: 1px solid white;
 	border-top: 1px solid white;
 }
 .tabs-container.dark-mode input[type="radio"] + label {
-	background-color: black;
+	background-color: yellow; /*test*/
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 	border-top: 1px solid black;
