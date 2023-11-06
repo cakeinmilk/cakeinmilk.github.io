@@ -221,6 +221,10 @@ body.dark-mode .mytabs label::before {
   background-color: #000000; /* Replace with the dark mode background color */
 }
 
+body.dark-mode .tabs-container label::before {
+  background-color: #000000; /* Replace with the dark mode background color */
+}
+
 /* Update the existing .mytabs input[type='radio']:checked + label::before rule */
 .mytabs input[type='radio']:checked + label::before {
   /* ... other styles */
@@ -229,6 +233,11 @@ body.dark-mode .mytabs label::before {
 
 /* New dark mode rule */
 body.dark-mode .mytabs input[type='radio']:checked + label::before {
+  opacity: 1; /* Show the overlay when the label is selected */
+}
+
+/* New dark mode rule */
+body.dark-mode .tabs-container input[type='radio']:checked + label::before {
   opacity: 1; /* Show the overlay when the label is selected */
 }
 
@@ -815,7 +824,10 @@ border: solid white 1px;
 	border-top-left-radius: 0;
 	order: 1;
 	display: none;
-	border-top: 1px solid blue; /*mew*/
+	border-top: 2px #659dbd; /*mew*/
+	border-right: 2px #659dbd; /*mew*/
+	border-left: 2px #659dbd; /*mew*/
+	border-bottom: 2px #659dbd; /*mew*/
 }
 .mytabs .tab h2 {
 	font-size: 3em;
@@ -837,17 +849,17 @@ border: solid white 1px;
 	-moz-border-radius-topright: 6px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
-	border-left: 1px solid blue; /*mew*/
-	border-right: 1px solid blue; /*mew*/
-	border-top: 1px solid blue; /*mew*/
+	border-left: 2px #659dbd; /*mew*/
+	border-right: 2px #659dbd; /*mew*/
+	border-top: 2px #659dbd; /*mew*/
 }
 
 .tabs-container {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 750px;
-	margin: 20px auto;
-	padding: 15px; /*25*/
+	margin: 10px auto; /*20*/
+	padding: 25px; 
 }
 .tabs-container input[type="radio"] {
 	display: none;
