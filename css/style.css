@@ -168,6 +168,19 @@ body.dark-mode .tabs-container input[type='radio']:checked + label::before {
 	border-top: 1px solid black;
 }
 
+.tabs-container.dark-mode input[type="radio"] + label {
+	background-color: pink;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.tabs-container.dark-mode input[type="radio"]:checked + label {
+	background-color: red;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+}
 
 .mytabs .tab.dark-mode {
 	background-color: black;
