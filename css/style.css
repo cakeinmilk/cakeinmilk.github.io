@@ -889,7 +889,7 @@ border: solid white 1px;
 	display: block;
 }
 .tabs-container input[type="radio"]:checked + label {
-	background-color: #659DBD; /*fff*/
+	background-color: #fff;  /*#659DBD;*/
 	-webkit-border-top-left-radius: 6px;
 	-webkit-border-top-right-radius: 6px;
 	-moz-border-radius-topleft: 6px;
