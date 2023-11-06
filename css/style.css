@@ -150,19 +150,19 @@ body.dark-mode .tabs-container input[type='radio']:checked + label::before {
 }
 
 .mytabs label.dark-mode {
-	background-color: black;
+	background-color: yellow;
 }
 .mytabs input.dark-mode {
-	background-color: black;
+	background-color: blue;
 }
 .mytabs.dark-mode input[type="radio"]:checked + label {
-	background-color: black;
+	background-color: red;
 	border-left: 1px solid white;
 	border-right: 1px solid white;
 	border-top: 1px solid white;
 }
 .mytabs.dark-mode input[type="radio"] + label {
-	background-color: black;
+	background-color: pink;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 	border-top: 1px solid black;
