@@ -28,6 +28,16 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
   background-color: white;
 }
 
+/*audio::-webkit-media-controls-panel.dark-mode {
+	background-color: white;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  audio::-webkit-media-controls-panel {
+	filter: invert(1);
+}
+}*/
+
 .stopandhidebtn.dark-mode {
   filter: brightness(0.5) invert(1);
 }
@@ -56,23 +66,92 @@ html, body {
   fill: white;
 }
 
-body.dark-mode .tabs-container label::before {
-  background-color: #000000; 
+.tabs-container label.dark-mode {
+	background-color: black;
+}
+.tabs-container input.dark-mode {
+	background-color: black;
+}
+.tabs-container.dark-mode input[type="radio"]:checked /*+ label*/ {
+	background-color: black;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+}
+.tabs-container.dark-mode input[type="radio"] + label {
+	background-color: yellow; /*test*/
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
 }
 
+
+.tabs-container .tab.dark-mode {
+	background-color: black;
+	border: 1px solid white;
+}
+.tabs-container.dark-mode {
+	background-color: black;
+}
+.tabs-container.dark-mode img {
+  filter: brightness(0.5) invert(1);
+}
+
+.tabs-container label {
+  /* Add position: relative; */
+  position: relative;
+}
+
+.tabs-container input[type='radio']:checked + label {
+  /* Add z-index: 1; */
+  z-index: 1;
+  /* ... other styles */
+}
+
+/* New rule */
+.tabs-container label::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  height: calc(100% + 2px);
+  z-index: 10; /* Increase z-index */
+  opacity: 0;
+  background-color: #fff;
+  z-index: -1; /* Place the overlay below the label's content */
+}
 
 .tabs-container input[type='radio']:checked + label::before {
-  opacity: 1; 
+  opacity: 1; /* Show the overlay when the label is selected */
 }
 
+/* Update the existing .mytabs label::before rule */
+.tabs-container label::before {
+  /* ... other styles */
+  background-color: #fff; /* Default light mode background color */
+}
+
+/* New dark mode rule */
+body.dark-mode .tabs-container label::before {
+  background-color: #000000; /* Replace with the dark mode background color */
+}
+
+/* Update the existing .mytabs input[type='radio']:checked + label::before rule */
+.tabs-container input[type='radio']:checked + label::before {
+  /* ... other styles */
+  opacity: 1; /* Show the overlay when the label is selected */
+}
+
+/* New dark mode rule */
 body.dark-mode .tabs-container input[type='radio']:checked + label::before {
-  opacity: 1; 
+  opacity: 1; /* Show the overlay when the label is selected */
 }
 
-.mytabs, .tabs-container label.dark-mode {
+.mytabs label.dark-mode {
 	background-color: yellow;
 }
-.mytabs, .tabs-container input.dark-mode {
+.mytabs input.dark-mode {
 	background-color: blue;
 }
 .mytabs.dark-mode input[type="radio"]:checked + label {
@@ -81,15 +160,14 @@ body.dark-mode .tabs-container input[type='radio']:checked + label::before {
 	border-right: 1px solid white;
 	border-top: 1px solid white;
 }
-
-.tabs-container.dark-mode input[type="radio"]:checked {
-	background-color: black;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
-	border-top: 1px solid white;
+.mytabs.dark-mode input[type="radio"] + label {
+	background-color: pink;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
 }
 
-.mytabs.dark-mode input[type="radio"] + label {
+.tabs-container.dark-mode input[type="radio"] + label {
 	background-color: pink;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
@@ -103,76 +181,78 @@ body.dark-mode .tabs-container input[type='radio']:checked + label::before {
 	border-top: 1px solid white;
 }
 
-.tabs-container.dark-mode input[type="radio"] + label {
-	background-color: pink;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-	border-top: 1px solid black;
-}
-
 .mytabs .tab.dark-mode {
 	background-color: black;
 	border: 1px solid white;
 }
-
-.tabs-container .tab.dark-mode {
-	background-color: black;
-	border: 1px solid white;
-}
-
 .mytabs.dark-mode {
-	background-color: black;
-}
-.tabs-container.dark-mode {
 	background-color: black;
 }
 .mytabs.dark-mode img {
   filter: brightness(0.5) invert(1);
 }
-.tabs-container.dark-mode img {
-  filter: brightness(0.5) invert(1);
-}
 
-.mytabs, .tabs-container  label {
+.mytabs label {
+  /* Add position: relative; */
   position: relative;
 }
 
-.mytabs, .tabs-container  input[type='radio']:checked + label {
+.mytabs input[type='radio']:checked + label {
+  /* Add z-index: 1; */
   z-index: 1;
+  /* ... other styles */
 }
 
-.mytabs, .tabs-container label::before {
+/* New rule */
+.mytabs label::before {
   content: "";
   position: absolute;
   top: 5px;
   left: 0;
   right: 0;
   height: calc(100% + 2px);
-  z-index: 10; 
+  z-index: 10; /* Increase z-index */
   opacity: 0;
   background-color: #fff;
-  z-index: -1; 
+  z-index: -1; /* Place the overlay below the label's content */
 }
 
-.mytabs, .tabs-container input[type='radio']:checked + label::before {
-  opacity: 1; 
+.mytabs input[type='radio']:checked + label::before {
+  opacity: 1; /* Show the overlay when the label is selected */
 }
 
+
+/* Update the existing .mytabs label::before rule */
+.mytabs label::before {
+  /* ... other styles */
+  background-color: #fff; /* Default light mode background color */
+}
+
+/* New dark mode rule */
 body.dark-mode .mytabs label::before {
-  background-color: #000000;
+  background-color: #000000; /* Replace with the dark mode background color */
 }
 
 body.dark-mode .tabs-container label::before {
-  background-color: #000000;
+  background-color: #000000; /* Replace with the dark mode background color */
 }
 
+/* Update the existing .mytabs input[type='radio']:checked + label::before rule */
+.mytabs input[type='radio']:checked + label::before {
+  /* ... other styles */
+  opacity: 1; /* Show the overlay when the label is selected */
+}
+
+/* New dark mode rule */
 body.dark-mode .mytabs input[type='radio']:checked + label::before {
-  opacity: 1; 
+  opacity: 1; /* Show the overlay when the label is selected */
 }
 
+/* New dark mode rule */
 body.dark-mode .tabs-container input[type='radio']:checked + label::before {
-  opacity: 1;
+  opacity: 1; /* Show the overlay when the label is selected */
 }
+
 
 .divTableRow.dark-mode:hover {
 	background-color: lightgray;
@@ -256,6 +336,7 @@ body.dark-mode .tabs-container input[type='radio']:checked + label::before {
   display: none;
   }
 }
+
 
 /* Small screens (mobile devices) */
 @media (max-width: 700px) {
@@ -725,10 +806,10 @@ border: solid white 1px;
 	margin: 20px auto;
 	padding: 25px;
 }
-.mytabs, .tabs-container input[type="radio"] {
+.mytabs input[type="radio"] {
 	display: none;
 }
-.mytabs, .tabs-container label {
+.mytabs label {
 	padding: 1em 1.5em 1em 1.5em;
 	background: #BC986A;
 	font-weight: bold;
@@ -769,10 +850,10 @@ border: solid white 1px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
 }
-.mytabs, .tabs-container input[type='radio']:checked + label + .tab {
+.mytabs input[type='radio']:checked + label + .tab {
 	display: block;
 }
-.mytabs, .tabs-container input[type="radio"]:checked + label {
+.mytabs input[type="radio"]:checked + label {
 	background-color: #fff;
 	-webkit-border-top-left-radius: 6px;
 	-webkit-border-top-right-radius: 6px;
@@ -792,7 +873,24 @@ border: solid white 1px;
 	margin: 10px auto; /*20*/
 	padding: 25px; 
 }
-
+.tabs-container input[type="radio"] {
+	display: none;
+}
+.tabs-container label {
+	padding: 1em 1.5em 1em 1.5em;
+	background: #BC986A;
+	font-weight: bold;
+	font-size: 0.8em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
 .tabs-container .tab { /*main active tab*/
 	width: 100%;
 	padding: 20px;
@@ -815,6 +913,19 @@ border: solid white 1px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
 }
+.tabs-container input[type='radio']:checked + label + .tab {
+	display: block;
+}
+.tabs-container input[type="radio"]:checked + label {
+	background-color: #fff; /*fff*/
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
 
 .showtitle {
     margin: 20px 0;
