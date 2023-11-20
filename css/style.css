@@ -85,7 +85,6 @@ html, body {
 	border-top: 1px solid black;
 }
 
-
 .tabs-container .tab.dark-mode {
 	background-color: black;
 	border: 1px solid white;
@@ -98,17 +97,13 @@ html, body {
 }
 
 .tabs-container label {
-  /* Add position: relative; */
   position: relative;
 }
 
 .tabs-container input[type='radio']:checked + label {
-  /* Add z-index: 1; */
   z-index: 1;
-  /* ... other styles */
 }
 
-/* New rule */
 .tabs-container label::before {
   content: "";
   position: absolute;
@@ -119,33 +114,27 @@ html, body {
   z-index: 10; /* Increase z-index */
   opacity: 0;
   background-color: #fff;
-  z-index: -1; /* Place the overlay below the label's content */
+  z-index: -1;
 }
 
 .tabs-container input[type='radio']:checked + label::before {
-  opacity: 1; /* Show the overlay when the label is selected */
+  opacity: 1; 
 }
 
-/* Update the existing .mytabs label::before rule */
 .tabs-container label::before {
-  /* ... other styles */
-  background-color: #fff; /* Default light mode background color */
+  background-color: #fff;
 }
 
-/* New dark mode rule */
 body.dark-mode .tabs-container label::before {
-  background-color: #000000; /* Replace with the dark mode background color */
+  background-color: #000000; 
 }
 
-/* Update the existing .mytabs input[type='radio']:checked + label::before rule */
 .tabs-container input[type='radio']:checked + label::before {
-  /* ... other styles */
-  opacity: 1; /* Show the overlay when the label is selected */
+  opacity: 1; 
 }
 
-/* New dark mode rule */
 body.dark-mode .tabs-container input[type='radio']:checked + label::before {
-  opacity: 1; /* Show the overlay when the label is selected */
+  opacity: 1; 
 }
 
 .mytabs label.dark-mode {
@@ -186,6 +175,9 @@ body.dark-mode .tabs-container input[type='radio']:checked + label::before {
 	border: 1px solid white;
 }
 .mytabs.dark-mode {
+	background-color: black;
+}
+.tabs-container.dark-mode {
 	background-color: black;
 }
 .mytabs.dark-mode img {
