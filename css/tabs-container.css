@@ -4,7 +4,7 @@
 .tabs-container input.dark-mode {
 	background-color: #000
 }
-.tabs-container.dark-mode input[type=radio]:checked /*+ label*/ {
+.tabs-container.dark-mode input[type=radio]:checked + label {
 	background-color: #000;
 	border-left: 1px solid #fff;
 	border-right: 1px solid #fff;
@@ -29,7 +29,7 @@
 }
 
 .tabs-container input[type=radio]:checked + label {
-  z-index: 1
+  
 }
 
 .tabs-container label::before {
@@ -45,12 +45,12 @@
   z-index: -1;
 }
 
-.tabs-container input[type=radio]:checked + label::before {
-  opacity: 1 
-}
-
 body.dark-mode .tabs-container label::before {
   background-color: #000
+}
+
+.tabs-container input[type=radio]:checked + label::before {
+  opacity: 1 
 }
 
 body.dark-mode .tabs-container input[type=radio]:checked + label::before {
@@ -109,5 +109,6 @@ body.dark-mode .tabs-container input[type=radio]:checked + label::before {
 	-webkit-border-top-left-radius: 6px;
 	-webkit-border-top-right-radius: 6px;
 	border-top-left-radius: 6px;
-	border-top-right-radius: 6px
+	border-top-right-radius: 6px;
+	z-index: 1
 }
