@@ -63,7 +63,7 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
 	border-right: 1px solid #fff;
 	border-top: 1px solid #fff
 }
-.mytabs.dark-mode input[type=radio] + label {
+.mytabs.dark-mode input[type=radio] + label, .tabs-container.dark-mode input[type=radio] + label {
 	background-color: pink;
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
@@ -182,13 +182,13 @@ body.dark-mode .mytabs input[type=radio]:checked + label::before {
 	border-left: 1px solid #fff;
 	border-right: 1px solid #fff;
 	border-top: 1px solid #fff
-}*/
+}
 .tabs-container.dark-mode input[type=radio] + label {
-	background-color: yellow; /*test*/
+	background-color: yellow;
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
 	border-top: 1px solid #000
-}
+}*/
 
 .tabs-container .tab.dark-mode {
 	background-color: #000;
