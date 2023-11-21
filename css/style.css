@@ -81,11 +81,7 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
   filter: brightness(.5) invert()
 }
 
-.tabs-container label {
-  position: relative
-}
-
-.tabs-container input[type='radio']:checked + label {
+.tabs-container input[type=radio]:checked + label {
   z-index: 1
 }
 
@@ -102,7 +98,7 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
   z-index: -1;
 }
 
-.tabs-container input[type='radio']:checked + label::before {
+.tabs-container input[type=radio]:checked + label::before {
   opacity: 1 
 }
 
@@ -145,9 +141,7 @@ body.dark-mode .tabs-container input[type=radio]:checked + label::before {
   filter: brightness(.5) invert()
 }
 
-.mytabs input[type=radio]:checked + label {
-  z-index: 1
-}
+
 
 .mytabs label::before {
   content: "";
@@ -160,10 +154,6 @@ body.dark-mode .tabs-container input[type=radio]:checked + label::before {
   opacity: 0;
   background-color: #fff;
   z-index: -1
-}
-
-.mytabs input[type=radio]:checked + label::before {
-  opacity: 1
 }
 
 body.dark-mode .mytabs label::before {
@@ -300,10 +290,6 @@ header.scrolled h1 {
 
 header.scrolled .links {
   display: none
-}
-
-header.grid-child {
-	display:none
 }
 
 header.grid-child {
@@ -742,8 +728,6 @@ border: solid #fff 1px;
 	align-items: center;
 	text-align: center;
 	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px
 }
@@ -774,6 +758,7 @@ border: solid #fff 1px;
 .mytabs input[type=radio]:checked + label + .tab {
 	display: block
 }
+
 .mytabs input[type=radio]:checked + label {
 	background-color: #fff;
 	-webkit-border-top-left-radius: 6px;
@@ -783,6 +768,7 @@ border: solid #fff 1px;
 	border-left: 4px solid #659dbd; /*mew*/
 	border-right: 4px solid #659dbd; /*mew*/
 	border-top: 4px solid #659dbd /*mew*/
+	z-index: 1;
 }
 
 .tabs-container {
@@ -795,6 +781,7 @@ border: solid #fff 1px;
 .tabs-container input[type=radio] {
 	display: none
 }
+
 .tabs-container label {
 	padding: 1em 1.5em 1em 1.5em;
 	background: #BC986A;
@@ -804,6 +791,7 @@ border: solid #fff 1px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	position: relative;
 	-webkit-border-top-right-radius: 6px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px
@@ -837,7 +825,6 @@ border: solid #fff 1px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px
 }
-
 
 .showtitle {
     margin: 20px 0
@@ -1127,8 +1114,8 @@ img {
 }
 
 .blockquote::after {
-  content: close-quote;
-  font-size: 0px
+  content: close-quote
+  /*font-size: 0px*/
 }
 
 .blockquote2 {
