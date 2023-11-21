@@ -1,9 +1,9 @@
 body {
-  background: #DAAD86;/*#ccc;*/
+  background: #daad86;
   font-family: 'Quicksand', sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Use viewport height units to cover the full height of the viewport */
+  min-height: 100vh;
   margin: 0;
   overflow-y: scroll
 }
@@ -11,9 +11,7 @@ body {
 .content-wrap {
   flex: 1
 }
-overlayBg
-
-html {
+overlayBg html {
 	overflow-y: scroll
 }
 
@@ -59,13 +57,13 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
 .tabs-container input.dark-mode {
 	background-color: #000
 }
-.tabs-container.dark-mode input[type="radio"]:checked /*+ label*/ {
+.tabs-container.dark-mode input[type=radio]:checked /*+ label*/ {
 	background-color: #000;
 	border-left: 1px solid #fff;
 	border-right: 1px solid #fff;
 	border-top: 1px solid #fff
 }
-.tabs-container.dark-mode input[type="radio"] + label {
+.tabs-container.dark-mode input[type=radio] + label {
 	background-color: yellow; /*test*/
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
@@ -98,7 +96,7 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
   left: 0;
   right: 0;
   height: calc(100% + 2px);
-  z-index: 10; /* Increase z-index */
+  /*z-index: 10;  Increase z-index */
   opacity: 0;
   background-color: #fff;
   z-index: -1;
@@ -108,19 +106,11 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
   opacity: 1 
 }
 
-.tabs-container label::before {
-  background-color: #fff
-}
-
 body.dark-mode .tabs-container label::before {
   background-color: #000
 }
 
-.tabs-container input[type='radio']:checked + label::before {
-  opacity: 1
-}
-
-body.dark-mode .tabs-container input[type='radio']:checked + label::before {
+body.dark-mode .tabs-container input[type=radio]:checked + label::before {
   opacity: 1
 }
 
@@ -130,31 +120,17 @@ body.dark-mode .tabs-container input[type='radio']:checked + label::before {
 .mytabs input.dark-mode {
 	background-color: blue
 }
-.mytabs.dark-mode input[type="radio"]:checked + label {
+.mytabs.dark-mode input[type=radio]:checked + label {
 	background-color: red;
 	border-left: 1px solid #fff;
 	border-right: 1px solid #fff;
 	border-top: 1px solid #fff
 }
-.mytabs.dark-mode input[type="radio"] + label {
+.mytabs.dark-mode input[type=radio] + label {
 	background-color: pink;
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
 	border-top: 1px solid #000
-}
-
-.tabs-container.dark-mode input[type="radio"] + label {
-	background-color: pink;
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;
-	border-top: 1px solid #000
-}
-
-.tabs-container.dark-mode input[type="radio"]:checked + label {
-	background-color: red;
-	border-left: 1px solid #fff;
-	border-right: 1px solid #fff;
-	border-top: 1px solid #fff
 }
 
 .mytabs .tab.dark-mode {
@@ -169,12 +145,7 @@ body.dark-mode .tabs-container input[type='radio']:checked + label::before {
   filter: brightness(.5) invert()
 }
 
-.mytabs label {
-  /* Add position: relative; */
-  position: relative
-}
-
-.mytabs input[type='radio']:checked + label {
+.mytabs input[type=radio]:checked + label {
   z-index: 1
 }
 
@@ -191,37 +162,24 @@ body.dark-mode .tabs-container input[type='radio']:checked + label::before {
   z-index: -1
 }
 
-.mytabs input[type='radio']:checked + label::before {
+.mytabs input[type=radio]:checked + label::before {
   opacity: 1
-}
-
-.mytabs label::before {
-  background-color: #fff
 }
 
 body.dark-mode .mytabs label::before {
   background-color: #000
 }
 
-body.dark-mode .tabs-container label::before {
-  background-color: #000
-}
-
-.mytabs input[type='radio']:checked + label::before {
+.mytabs input[type=radio]:checked + label::before {
   opacity: 1
 }
 
-body.dark-mode .mytabs input[type='radio']:checked + label::before {
-  opacity: 1
-}
-
-
-body.dark-mode .tabs-container input[type='radio']:checked + label::before {
+body.dark-mode .mytabs input[type=radio]:checked + label::before {
   opacity: 1
 }
 
 .divTableRow.dark-mode:hover {
-	background-color: lightgray;
+	background-color: #d3d3d3;
 	color: #000
 }
 .divTableRow.dark-mode:hover img {
@@ -308,26 +266,26 @@ body.dark-mode .tabs-container input[type='radio']:checked + label::before {
 @media (max-width: 700px) {
 
   .quote-container {
-    display: none;
+    display: none
   }
   header .links {
-  display: none;
+  display: none
   }
   .header-top h1 {
-    font-size: 1.2rem;
+    font-size: 1.2rem
   }
 }
 
 /* Small screens (mobile devices) */
 @media (max-width: 480px) {
   .header-top h1 {
-    font-size: 1rem;
+    font-size: 1rem
   }
 }
 
 .header.dark-mode {
 	background-color: #000;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #ccc
 }
 header.scrolled {
   height: 40px;
@@ -519,7 +477,7 @@ header .menu-icon {
 .latest a {
   color: #8d8741;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .latest a.dark-mode {
@@ -564,7 +522,7 @@ footer {
 .blockquote a {
   color: #8d8741;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .blockquote a.dark-mode {
@@ -578,7 +536,7 @@ footer {
 .footer a {
   color: #8d8741;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .footer a.dark-mode {
@@ -668,7 +626,6 @@ border: solid #fff 1px;
 	max-height: 80%; /* Optional, limit the content height */
 	/* transition: transform 0.5s ease, opacity 0.5s ease; */
 	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 	border-left: 10px solid #659dbd;
@@ -771,13 +728,14 @@ border: solid #fff 1px;
 	margin: 20px auto;
 	padding: 25px
 }
-.mytabs input[type="radio"] {
+.mytabs input[type=radio] {
 	display: none
 }
 .mytabs label {
+	position: relative;
 	padding: 1em 1.5em 1em 1.5em;
 	background: #BC986A;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: .8em;
 	display: flex;
 	justify-content: center;
@@ -789,6 +747,7 @@ border: solid #fff 1px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px
 }
+
 .mytabs .tab {
 	width: 100%;
 	padding: 20px;
@@ -796,7 +755,6 @@ border: solid #fff 1px;
 	-webkit-border-radius: 5px;
 	-webkit-border-top-left-radius: 0;
 	-moz-border-radius: 5px;
-	-moz-border-radius-topleft: 0;
 	border-radius: 5px;
 	border-top-left-radius: 0;
 	order: 1;
@@ -810,20 +768,16 @@ border: solid #fff 1px;
 	font-size: 3em;
 	-webkit-border-top-left-radius: 6px;
 	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px
 }
-.mytabs input[type='radio']:checked + label + .tab {
+.mytabs input[type=radio]:checked + label + .tab {
 	display: block
 }
-.mytabs input[type="radio"]:checked + label {
+.mytabs input[type=radio]:checked + label {
 	background-color: #fff;
 	-webkit-border-top-left-radius: 6px;
 	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
 	border-left: 4px solid #659dbd; /*mew*/
@@ -838,21 +792,19 @@ border: solid #fff 1px;
 	margin: 10px auto; /*20*/
 	padding: 25px
 }
-.tabs-container input[type="radio"] {
+.tabs-container input[type=radio] {
 	display: none
 }
 .tabs-container label {
 	padding: 1em 1.5em 1em 1.5em;
 	background: #BC986A;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: .8em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px
 }
@@ -863,7 +815,6 @@ border: solid #fff 1px;
 	-webkit-border-radius: 5px;
 	-webkit-border-top-left-radius: 0;
 	-moz-border-radius: 5px;
-	-moz-border-radius-topleft: 0;
 	border-radius: 5px;
 	border-top-left-radius: 0;
 	order: 1;
@@ -873,20 +824,16 @@ border: solid #fff 1px;
 	font-size: 3em;
 	-webkit-border-top-left-radius: 6px;
 	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px
 }
-.tabs-container input[type='radio']:checked + label + .tab {
+.tabs-container input[type=radio]:checked + label + .tab {
 	display: block
 }
-.tabs-container input[type="radio"]:checked + label {
-	background-color: #fff; /*fff*/
+.tabs-container input[type=radio]:checked + label {
+	background-color: #fff;
 	-webkit-border-top-left-radius: 6px;
 	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px
 }
@@ -1059,13 +1006,10 @@ img {
 .divTableColumn {
 	display: table-column
 }
-.divTableHeading {
-	background-color: #eee;
-	display: table-header-group
-}
+
 .divTableCell, .divTableHead {
-  border: 0px solid #999999;
-  display: table-cell;
+  border: 0px /*solid #999*/;
+  /*display: table-cell;*/
   padding: 3px 10px;
   text-align: center;
   display: flex;
@@ -1139,12 +1083,12 @@ img {
 }
 
 .divTableHeading {
-	background-color: #EEE;
+	background-color: #eee;
 	display: table-header-group;
 	font-weight: bold
 }
 .divTableFoot {
-	background-color: #EEE;
+	background-color: #eee;
 	display: table-footer-group;
 	font-weight: bold
 }
@@ -1185,10 +1129,6 @@ img {
 .blockquote::after {
   content: close-quote;
   font-size: 0px
-}
-
-.italicText {
-  font-style: italic
 }
 
 .blockquote2 {
