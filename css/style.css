@@ -58,7 +58,7 @@ audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
 	background-color: #000
 }
 .mytabs.dark-mode input[type=radio]:checked + label, .tabs-container.dark-mode input[type=radio]:checked + label {
-	background-color: #fff;
+	background-color: #000;
 	border-left: 1px solid #fff;
 	border-right: 1px solid #fff;
 	border-top: 1px solid #fff
@@ -163,10 +163,10 @@ body.dark-mode .mytabs input[type=radio]:checked + label::before, body.dark-mode
 	border-top-left-radius: 0;
 	order: 1;
 	display: none;
-	border-top: 4px solid #659dbd; /*mew*/
-	border-right: 4px solid #659dbd; /*mew*/
-	border-left: 4px solid #659dbd; /*mew*/
-	border-bottom: 4px solid #659dbd /*mew*/
+	border-top: 1px solid #659dbd; /*mew*/
+	border-right: 1px solid #659dbd; /*mew*/
+	border-left: 1px solid #659dbd; /*mew*/
+	border-bottom: 1px solid #659dbd /*mew*/
 }
 .mytabs .tab h2, .tabs-container .tab h2 {
 	font-size: 3em;
