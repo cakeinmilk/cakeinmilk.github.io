@@ -9,3 +9,5 @@ function sortTable(columnIndex) {
     let table = document.querySelector('.art-table');
     sortedRows.forEach(row => table.appendChild(row));
 }
+
+document.addEventListener("DOMContentLoaded", sortTable(columnIndex));
