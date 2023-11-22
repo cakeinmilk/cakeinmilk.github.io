@@ -963,6 +963,26 @@ img {
   height: 23px
 }
 
+.articletable {
+    display: table;
+    width: 100%
+}
+
+.art-header-row, .art-table-row {
+    display: table-row
+}
+
+.art-header, .art-cell {
+    display: table-cell;
+    padding: 8px;
+    text-align: left
+}
+
+.art-header {
+    font-weight: bold;
+    cursor: pointer
+}
+
 .expand-container {
   display: flex;
   align-items: center;
