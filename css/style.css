@@ -980,7 +980,16 @@ img {
 
 .art-header {
     font-weight: bold;
+	position: relative;
     cursor: pointer
+}
+
+.art-header:after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%)
 }
 
 .expand-container {
