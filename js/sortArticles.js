@@ -45,15 +45,16 @@ function updateArrowDirection(columnIndex) {
 
 function toggleDropdown() {
     let dropdown = document.getElementById("dropdown");
-    let header = document.querySelector('.art-header-row .art-header:nth-child(3)'); // Adjust the selector to target the "Document Type" header
+    let docTypeHeader = document.querySelector('.art-header-row .art-header:nth-child(3)'); // Adjust as needed
 
     // Calculate position
-    let rect = header.getBoundingClientRect();
-    dropdown.style.left = rect.left + 'px';
-    dropdown.style.top = (rect.top + rect.height) + 'px';
+    let headerRect = docTypeHeader.getBoundingClientRect();
+    dropdown.style.left = headerRect.left + 'px';
+    dropdown.style.top = headerRect.bottom + 'px'; // Position it right below the header
 
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 }
+
 
 function toggleSelectAll(selectAllCheckbox) {
     let checkboxes = document.querySelectorAll('.filter');

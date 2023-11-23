@@ -963,6 +963,10 @@ img {
   height: 23px
 }
 
+.art-tab {
+    position: relative;
+}
+
 .art-table {
     display: table;
     width: 100%
