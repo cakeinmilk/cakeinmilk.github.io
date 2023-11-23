@@ -1,7 +1,8 @@
 // Call this function when the page loads
 window.onload = function() {
     updateArrowDirection(0); // Initialize arrow for 'Date' column
-    filterRows(); // Apply initial filter based on default checkbox state
+    document.getElementById('selectAll').checked = true; // Ensure 'Select All' is checked by default
+    toggleSelectAll(document.getElementById('selectAll')); // Apply the default state of 'Select All'
 }
 
 let sortOrder = 1; // 1 for ascending, -1 for descending
