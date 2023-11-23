@@ -1,3 +1,9 @@
+// Call this function when the page loads
+window.onload = function() {
+    updateArrowDirection(0); // Initialize arrow for 'Date' column
+    filterRows(); // Apply initial filter based on default checkbox state
+}
+
 let sortOrder = 1; // 1 for ascending, -1 for descending
 let currentSortedColumn = null;
 
@@ -24,9 +30,13 @@ function sortTable(columnIndex) {
 function updateArrowDirection(columnIndex) {
     let headers = document.querySelectorAll('.art-header');
     headers.forEach((header, index) => {
-        header.innerHTML = header.textContent.trim(); // Remove existing arrows
+        if (header.textContent.trim().includes('Date')) { // If the header is 'Date'
+            header.textContent = 'Date'; // Reset the text to remove arrows
+        } else {
+            header.textContent = header.textContent.trim(); // For other headers, remove arrows
+        }
         if (index === columnIndex) {
-            let arrow = sortOrder === 1 ? '↑' : '↓';
+            let arrow = sortOrder === 1 ? '↓' : '↑'; // Adjust the arrow direction
             header.innerHTML += ' ' + arrow;
         }
     });
@@ -39,7 +49,10 @@ function toggleDropdown() {
 
 function toggleSelectAll(selectAllCheckbox) {
     let checkboxes = document.querySelectorAll('.filter');
-    checkboxes.forEach(chk => chk.checked = selectAllCheckbox.checked);
+    checkboxes.forEach(chk => {
+        chk.checked = selectAllCheckbox.checked;
+        chk.disabled = selectAllCheckbox.checked; // Disable other checkboxes if 'Select All' is checked
+    });
     filterRows();
 }
 
@@ -47,16 +60,13 @@ function filterRows() {
     let checkboxes = document.querySelectorAll('.filter:checked');
     let filterValues = Array.from(checkboxes).map(chk => chk.nextSibling.textContent.trim());
     let rows = document.querySelectorAll('.art-table-row');
-
-    rows.forEach(row => {
-        let cellValue = row.children[2].textContent; // Adjust index for the Document Type column
-        if (filterValues.length === 0 || filterValues.includes(cellValue)) {
-            row.style.display = '';
-        } else {
-            row.style.display = 'none';
-        }
-    });
+    
+    if (document.getElementById('selectAll').checked) {
+        rows.forEach(row => row.style.display = ''); // Show all rows if 'Select All' is checked
+    } else {
+        rows.forEach(row => {
+            let cellValue = row.children[2].textContent; // Adjust the index for the Document Type column
+            row.style.display = filterValues.includes(cellValue) ? '' : 'none';
+        });
+    }
 }
-
-
-document.addEventListener("DOMContentLoaded", sortTable(columnIndex));
