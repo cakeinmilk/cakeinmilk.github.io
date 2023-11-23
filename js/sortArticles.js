@@ -45,6 +45,13 @@ function updateArrowDirection(columnIndex) {
 
 function toggleDropdown() {
     let dropdown = document.getElementById("dropdown");
+    let header = document.querySelector('.art-header-row .art-header:nth-child(3)'); // Adjust the selector to target the "Document Type" header
+
+    // Calculate position
+    let rect = header.getBoundingClientRect();
+    dropdown.style.left = rect.left + 'px';
+    dropdown.style.top = (rect.top + rect.height) + 'px';
+
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 }
 
