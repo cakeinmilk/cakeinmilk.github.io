@@ -4825,7 +4825,14 @@
 									<div class="art-cell">Sample Publication</div>
 								</div>
 							</div>
-							
+							<div id="dropdown" class="dropdown">
+									<div class="checkbox"><input type="checkbox" id="selectAll" onclick="toggleSelectAll(this)"> Select All</div>
+									<!-- Repeat for each document type -->
+									<div class="checkbox"><input type="checkbox" class="filter" onclick="filterRows()"> Profile</div>
+									<div class="checkbox"><input type="checkbox" class="filter" onclick="filterRows()"> Interview</div>
+									<div class="checkbox"><input type="checkbox" class="filter" onclick="filterRows()"> Self-Penned</div>
+									<!-- ... other types ... -->
+							</div>
 						</div>
 					</div>
 			</div> <!-- ends tabs-container -->
