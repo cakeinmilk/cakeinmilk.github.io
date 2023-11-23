@@ -4807,7 +4807,15 @@
 							<div class="art-header-row">
 								<div class="art-header" onclick="sortTable(0)">Date</div>
 								<div class="art-header">Title</div>
-								<div class="art-header" onclick="sortTable(1)">Document Type</div>
+								<div class="header" onclick="toggleDropdown()">Document Type</div>
+									<div id="dropdown" class="dropdown">
+										<div class="checkbox"><input type="checkbox" id="selectAll" onclick="toggleSelectAll(this)"> Select All</div>
+										<!-- Repeat for each document type -->
+										<div class="checkbox"><input type="checkbox" class="filter" onclick="filterRows()"> Profile</div>
+										<div class="checkbox"><input type="checkbox" class="filter" onclick="filterRows()"> Interview</div>
+										<div class="checkbox"><input type="checkbox" class="filter" onclick="filterRows()"> Self-Penned</div>
+										<!-- ... other types ... -->
+									</div>
 								<div class="art-header">Publication</div>
 							</div>
 							<!-- Repeat this row for each entry -->
