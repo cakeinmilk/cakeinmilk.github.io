@@ -963,20 +963,12 @@ img {
   height: 23px
 }
 
-.art-tab {
-    position: relative;
-}
-
 .art-table {
     display: table;
     width: 100%
 }
 
-.art-header-row {
-	position: relative
-}
-
-.art-table-row {
+.art-header-row, .art-table-row {
     display: table-row
 }
 
