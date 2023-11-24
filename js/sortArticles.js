@@ -3,6 +3,8 @@ window.onload = function() {
     updateArrowDirection(0); // Initialize arrow for 'Date' column
     document.getElementById('selectAll').checked = true; // Ensure 'Select All' is checked by default
     toggleSelectAll(document.getElementById('selectAll')); // Apply the default state of 'Select All'
+	let icon = document.getElementById('dateIcon');
+    icon.classList.add('rotate-date');
 }
 
 let sortOrder = 1; // 1 for ascending, -1 for descending
@@ -26,6 +28,13 @@ function sortTable(columnIndex) {
     sortedRows.forEach(row => table.appendChild(row));
 
     updateArrowDirection(columnIndex);
+	// Rotate the icon
+    let icon = document.getElementById('dateIcon');
+    if (sortOrder === 1) {
+        icon.classList.add('rotate-date');
+    } else {
+        icon.classList.remove('rotate-date');
+    }
 }
 
 function updateArrowDirection(columnIndex) {

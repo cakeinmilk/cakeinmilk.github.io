@@ -1014,11 +1014,17 @@ img {
 }
 
 .dropdown.dark-mode {
+	border: 1px solid #fff;
 	background-color: #000
 }
 
 .checkbox {
     margin-bottom: 5px
+}
+
+.rotate-date {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
 }
 
 .expand-container {
