@@ -973,9 +973,9 @@ img {
 }
 
 .art-header, .art-cell {
-    box-sizing: border-box;
+    display: table-cell;
     padding: 8px;
-    text-align: left;
+    text-align: left
 }
 
 .art-header:nth-child(1), .art-cell:nth-child(1) { width: 20%; } /* Date */
