@@ -45,7 +45,7 @@ function updateArrowDirection(columnIndex) {
 
 function toggleDropdown() {
     let dropdown = document.getElementById("dropdown");
-    let docTypeHeader = document.querySelector('.art-header-row .art-header:nth-child(3)'); // Adjust as needed
+    //let docTypeHeader = document.querySelector('.art-header-row .art-header:nth-child(3)'); // Adjust as needed
 
     // Calculate position
     let headerRect = docTypeHeader.getBoundingClientRect();
