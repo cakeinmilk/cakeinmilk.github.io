@@ -980,7 +980,18 @@ img {
 .art-header {
     font-weight: bold;
 	position: relative;
-    cursor: pointer
+    cursor: pointer;
+	background-color: #f9f9f9;
+	border: 1px solid #8d8741;
+	border-radius: 6px;
+	color: #000;
+	margin: 5px;
+	margin-right: 10px;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	transition: background-color .5s
 }
 
 .art-header:after {
@@ -1007,7 +1018,6 @@ img {
 }
 
 .checkbox {
-	background-color: red;
     margin-bottom: 5px
 }
 
