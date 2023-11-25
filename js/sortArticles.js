@@ -27,30 +27,20 @@ function sortTable(columnIndex) {
     let table = document.querySelector('.art-table');
     sortedRows.forEach(row => table.appendChild(row));
 
-    updateArrowDirection(columnIndex);
-	// Rotate the icon
-    let icon = document.getElementById('dateIcon');
-    if (sortOrder === 1) {
-        icon.classList.add('rotate-date');
-    } else {
-        icon.classList.remove('rotate-date');
-    }
 }
 
 function updateArrowDirection(columnIndex) {
-    let headers = document.querySelectorAll('.art-header');
-    headers.forEach((header, index) => {
-        if (header.textContent.trim().includes('Date')) { // If the header is 'Date'
-            header.textContent = 'Date'; // Reset the text to remove arrows
+    // Rotate the icon for the Date column
+    let icon = document.getElementById('dateIcon');
+    if (columnIndex === 0) { // Check if the clicked column is 'Date'
+        if (sortOrder === 1) {
+            icon.classList.remove('rotate-date');
         } else {
-            header.textContent = header.textContent.trim(); // For other headers, remove arrows
+            icon.classList.add('rotate-date');
         }
-        if (index === columnIndex) {
-            let arrow = sortOrder === 1 ? '↓' : '↑'; // Adjust the arrow direction
-            header.innerHTML += ' ' + arrow;
-        }
-    });
+    }
 }
+
 
 function toggleDropdown() {
     let dropdown = document.getElementById("dropdown");
