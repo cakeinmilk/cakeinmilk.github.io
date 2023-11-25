@@ -27,20 +27,21 @@ function sortTable(columnIndex) {
     let table = document.querySelector('.art-table');
     sortedRows.forEach(row => table.appendChild(row));
 
+    updateArrowDirection(columnIndex);
 }
 
 function updateArrowDirection(columnIndex) {
-    // Rotate the icon for the Date column
-    let icon = document.getElementById('dateIcon');
-    if (columnIndex === 0) { // Check if the clicked column is 'Date'
+    // Check if the clicked column is 'Date'
+    if (columnIndex === 0) {
+        let icon = document.getElementById('dateIcon');
+        // Toggle the rotation class based on the sortOrder
         if (sortOrder === 1) {
-            icon.classList.remove('rotate-date');
+            icon.classList.remove('rotate-date'); // Ascending sort
         } else {
-            icon.classList.add('rotate-date');
+            icon.classList.add('rotate-date'); // Descending sort
         }
     }
 }
-
 
 function toggleDropdown() {
     let dropdown = document.getElementById("dropdown");

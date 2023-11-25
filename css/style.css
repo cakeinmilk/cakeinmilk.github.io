@@ -978,7 +978,6 @@ img {
 .art-header:nth-child(4), .art-cell:nth-child(4) { width: 25%; } /* Publication */
 
 .art-header {
-	all: initial;
     font-weight: bold;
 	position: relative;
     cursor: pointer;
