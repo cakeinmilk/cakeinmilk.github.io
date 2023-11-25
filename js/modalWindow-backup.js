@@ -31,12 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var fileUrl = this.getAttribute('href');
     await handleFetchContent(fileUrl);
   });
-  
-  addEventToLinks('article-title', function (event) {
-  event.preventDefault();
-  var fileUrl = this.getAttribute('data-file-url');
-  handleFetchContent(fileUrl);
-});
 
   addEventToLinks('fileLink-pb', async function (event) {
     event.preventDefault();
@@ -72,31 +66,18 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   async function handleFetchContent(fileUrl) {
-  try {
-    const fileExtension = fileUrl.split('.').pop().toLowerCase();
-    let content;
-
-    if (fileExtension === 'pdf') {
-      // Handle PDFs
-      content = `<iframe src="${fileUrl}" style="width:100%;height:500px;"></iframe>`;
-    } else if (fileExtension === 'jpg' || fileExtension === 'jpeg') {
-      // Handle JPG images
-      content = `<img src="${fileUrl}" style="max-width:100%;height:auto;">`;
-    } else {
-      // Handle text-based content
-      content = await getData(fileUrl);
+    try {
+      const content = await getData(fileUrl);
+      modalContentElement.innerText = content;
+      document.getElementById('modal').style.display = 'block';
+      modalContentElement.style.display = 'block'; // Show the overlayContent
+    } catch (error) {
+      console.error('Error:', error);
+      modalContentElement.innerText = 'Error: Unable to load the content.';
+      document.getElementById('modal').style.display = 'block';
+      modalContentElement.style.display = 'block'; // Show the overlayContent
     }
-
-    modalContentElement.innerHTML = content;
-    document.getElementById('modal').style.display = 'block';
-    modalContentElement.style.display = 'block';
-  } catch (error) {
-    console.error('Error:', error);
-    modalContentElement.innerText = 'Error: Unable to load the content.';
-    document.getElementById('modal').style.display = 'block';
-    modalContentElement.style.display = 'block';
   }
- }
 
   // Close the modal when clicking outside the content area
   document.getElementById('modal').addEventListener('click', function (event) {
