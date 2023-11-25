@@ -11,13 +11,14 @@ let sortOrder = 1; // 1 for ascending, -1 for descending
 let currentSortedColumn = null;
 
 function sortTable(columnIndex) {
-    if (currentSortedColumn === columnIndex) {
-        sortOrder = -sortOrder; // Toggle the sort order if the same column is clicked again
-    } else {
+    if (columnIndex === 0) { // If Date column is clicked
+        sortOrder = -sortOrder; // Toggle the sort order
+    } else if (currentSortedColumn !== columnIndex) {
         sortOrder = 1; // Reset to ascending for a new column
     }
     currentSortedColumn = columnIndex;
 
+    // Sorting logic...
     let rows = Array.from(document.querySelectorAll('.art-table-row'));
     let sortedRows = rows.sort((a, b) => {
         let aValue = a.children[columnIndex].textContent;
@@ -27,8 +28,10 @@ function sortTable(columnIndex) {
     let table = document.querySelector('.art-table');
     sortedRows.forEach(row => table.appendChild(row));
 
+    // Update the arrow direction
     updateArrowDirection(columnIndex);
 }
+
 
 function updateArrowDirection(columnIndex) {
     // Check if the clicked column is 'Date'
