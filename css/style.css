@@ -516,19 +516,19 @@ header .menu-icon {
 .latest.dark-mode {
   background-color: #000;
   border: 1px solid #fff;
-  color: #fff;
+  color: #fff
 }
 
 .footer {
-    color: #fff;
+  color: #fff;
   text-align: center;
   font-size: 11px;
-  margin-top: auto; /* Pushes the footer to the bottom */
+  margin-top: auto /* Pushes the footer to the bottom */
 }
 footer {
   color: #fff;
   text-align: center;
-  font-size: 11px;
+  font-size: 11px
 }
 
 .blockquote a {
@@ -552,28 +552,27 @@ footer {
 }
 
 .footer a.dark-mode {
-	color: #fff;
+	color: #fff
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 .expand-button {
 	background-color: #f9f9f9;
 	border-radius: 6px;	
 	border: 1px solid #8d8741;
-	transform: translateY(-1px);
+	transform: translateY(-1px)
 }
 
 .expand-button img.dark-mode {
-  fill: #fff;
-  /* or use any other color you prefer */
+  fill: #fff
 }
 
 .expand-button.dark-mode {
 background-color: #000;
-border: solid #fff 1px;
+border: solid #fff 1px
 }
 
 .expand-icon {
@@ -582,15 +581,15 @@ border: solid #fff 1px;
   fill: #000;
   margin-left: 5px; /* separates the icon and the arrow */
   float: left;
-  transition: transform .2s;
+  transition: transform .2s
 }
 
 .expand-icon.dark-mode {
-  fill: #fff;
+  fill: #fff
 }
 
 .expand-icon.rotate {
-  transform: rotate(90deg);
+  transform: rotate(90deg)
 }
 
 #overlayBg {
@@ -601,7 +600,7 @@ border: solid #fff 1px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
-  z-index: 998;
+  z-index: 998
 }
 
 .text-modal {
@@ -613,11 +612,11 @@ border: solid #fff 1px;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .5)
 }
 
 #overlayBg.show {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .7)
 }
 
 #txt-modal-content {
