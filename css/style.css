@@ -1026,10 +1026,10 @@ img {
     transform: rotate(180deg);
     transition: transform 0.3s ease;
 }
-
+/*
 #dateIcon {
     z-index: 2;
-}
+}*/
 
 .expand-container {
   display: flex;
