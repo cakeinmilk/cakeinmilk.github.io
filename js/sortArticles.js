@@ -11,10 +11,13 @@ let sortOrder = 1; // 1 for ascending, -1 for descending
 let currentSortedColumn = null;
 
 function sortTable(columnIndex) {
-    if (currentSortedColumn === columnIndex) {
-        sortOrder = -sortOrder; // Toggle the sort order if the same column is clicked again
-    } else {
-        sortOrder = 1; // Reset to ascending for a new column
+    if (columnIndex === 0) { // Only apply to the Date column
+        let icon = document.getElementById('dateIcon');
+        if (sortOrder === 1) {
+            icon.classList.remove('rotate-date'); // Ascending sort
+        } else {
+            icon.classList.add('rotate-date'); // Descending sort
+        }
     }
     currentSortedColumn = columnIndex;
 

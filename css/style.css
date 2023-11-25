@@ -1024,14 +1024,13 @@ img {
     margin-bottom: 5px
 }
 
-.rotate-date {
-    transform: rotate(180deg);
-    transition: transform 0.3s ease;
-}
-/*
 #dateIcon {
-    z-index: 2;
-}*/
+    transition: transform 0.3s ease; /* This ensures a smooth transition for both directions */
+}
+
+.rotate-date {
+    transform: rotate(180deg); /* Rotates the icon to indicate descending order */
+}
 
 .expand-container {
   display: flex;
