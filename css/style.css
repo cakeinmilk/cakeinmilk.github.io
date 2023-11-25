@@ -984,7 +984,7 @@ img {
 	display: table-cell;
     padding: 8px;
     text-align: left;
-	background-color: #f9f9f9;
+	/*background-color: #f9f9f9;
 	border: 1px solid #8d8741;
 	border-radius: 6px;
 	color: #000;
@@ -993,7 +993,7 @@ img {
 	padding: 5px 5px;
 	text-align: center;
 	text-decoration: none;
-	transition: background-color .5s
+	transition: background-color .5s*/
 }
 
 .art-header:after {
