@@ -86,7 +86,7 @@ async function handleFetchContent(fileUrl) {
       const textContent = await textResponse.text();
       
       const lines = textContent.split('\n').map(line => 
-        `<span style="background-color: black; padding: 0 4px; line-height: 1.6; display: inline-block;">${line}</span><br>`
+        `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line}</span><br>`
       ).join('');
 
       content = `
