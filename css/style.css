@@ -573,10 +573,7 @@ footer {
   text-decoration: none
 }
 
-.image-container {
-    position: relative;
-    display: inline-block; /* Or 'block' */
-}
+
 
 .image-container img {
     width: 100%;
@@ -598,7 +595,7 @@ footer {
 .image-container .image-text span {
     background-color: #000; /* Background color for each line */
     padding: 0 4px; /* Adjust padding as needed */
-    line-height: 1.6; /* Adjust line height as needed */
+    line-height: 2.6; /* Adjust line height as needed */
     display: inline-block; /* Each line as a block */
 }
 
