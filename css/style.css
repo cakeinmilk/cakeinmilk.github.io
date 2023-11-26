@@ -904,17 +904,17 @@ border: solid #fff 1px
   text-align:right
 }
 
-.divTableRow2 .shownotes a {
+.divTableRow2 .art-links a {
   color: #8d8741;
   text-decoration: none;
   font-weight: bold
 }
 
-.divTableRow2 .shownotes a:hover {
+.divTableRow2 .art-links a:hover {
   text-decoration: underline
 }
 
-.divTableRow2 .shownotes a.dark-mode {
+.divTableRow2 .art-links a.dark-mode {
 	color: #fff
 }
 
