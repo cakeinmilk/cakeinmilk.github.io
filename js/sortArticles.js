@@ -1,9 +1,9 @@
 // Call this function when the page loads
 window.onload = function() {
-    updateArrowDirection(0); // Initialize arrow for 'Date' column
     document.getElementById('selectAll').checked = true;
     toggleSelectAll(document.getElementById('selectAll'));
     sortOrder = -1; // Initially set to descending
+	updateArrowDirection(currentSortedColumn); // Initialize arrow for 'Date' column
     let icon = document.getElementById('dateIcon');
     // No need to add 'rotate-date' class here, as the initial sort is descending
 }
@@ -12,9 +12,9 @@ let sortOrder = 1; // 1 for ascending, -1 for descending
 let currentSortedColumn = null;
 
 function sortTable(columnIndex) {
-    if (columnIndex === 0) { // If Date column is clicked
-        sortOrder = -sortOrder; // Toggle the sort order
-    } else if (currentSortedColumn !== columnIndex) {
+    if (currentSortedColumn === columnIndex) {
+        sortOrder = -sortOrder; // Toggle the sort order if the same column is clicked again
+    } else {
         sortOrder = 1; // Reset to ascending for a new column
     }
     currentSortedColumn = columnIndex;
