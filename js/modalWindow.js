@@ -78,7 +78,7 @@ async function handleFetchContent(fileUrl) {
 
     if (fileExtension === 'pdf') {
       // Handle PDFs using object tag
-      content = `<object data="${fileUrl}" type="application/pdf" width="100%" height="80vh">
+      content = `<object data="${fileUrl}" type="application/pdf" width="100%" height=auto;">
                     <p>Your browser does not support PDFs. 
                     <a href="${fileUrl}">Download the PDF</a>.</p>
                  </object>`;
