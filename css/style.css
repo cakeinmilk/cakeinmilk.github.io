@@ -584,17 +584,22 @@ footer {
     display: block;
 }
 
-.image-container .image-text .text-line {
-    background-color: #000; /* Background color for each line */
-    padding: 4px; /* Padding around the text */
-    line-height: 2.6; /* Space between lines of text */
-    display: inline-block; /* Treat each line as a block */
-    color: white; /* Text color */
+.image-container .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust as needed */
+    color: #fff; /* Text color */
+    font-size: 1em; /* Adjust font size as needed */
+    border-radius: 4px; /* Optional: Adds rounded corners to the background */
 }
 
-.image-container .image-text {
-    /* ...other styles... */
-    background-color: transparent; /* Ensure there's no background color */
+.image-container .image-text span {
+    background-color: transparent; /* Background color for each line */
+    padding: 0 4px; /* Adjust padding as needed */
+    line-height: 2.6; /* Adjust line height as needed */
+    display: inline-block; /* Each line as a block */
 }
 
 .expand-button {
