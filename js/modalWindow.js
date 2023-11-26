@@ -77,11 +77,7 @@ async function handleFetchContent(fileUrl) {
     let content;
 
     if (fileExtension === 'pdf') {
-      // Handle PDFs using object tag
-      content = `<object data="${fileUrl}" type="application/pdf" width="100%" height=auto;">
-                    <p>Your browser does not support PDFs. 
-                    <a href="${fileUrl}">Download the PDF</a>.</p>
-                 </object>`;
+      console.log('PDF link clicked:', this.getAttribute('href'));
     } else if (fileExtension === 'jpg' || fileExtension === 'jpeg') {
       // Handle JPG images
       content = `<img src="${fileUrl}" style="max-width:100%;height:auto;">`;
