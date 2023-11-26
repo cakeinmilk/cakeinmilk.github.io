@@ -139,26 +139,39 @@ function breakLinesToFitWidth(textElement, maxWidth) {
 }
 
 function breakLinesToFitWidth(textElement, maxWidth) {
-  const words = textElement.innerText.split(' ');
+  const words = textElement.innerText.split(/\s+/); // Split by whitespace
   let line = '';
-  
-  textElement.innerHTML = ''; // Clear current text
+  let formattedText = '';
+
+  // Function to add line to formattedText
+  function addLine() {
+    formattedText += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span><br>`;
+    line = '';
+  }
 
   words.forEach(word => {
-    const testLine = line + word + ' ';
-    textElement.innerText = testLine;
+    const newLine = line + word + ' ';
+    textElement.innerText = newLine; // Temporarily set text for measurement
 
-    if (textElement.offsetWidth <= maxWidth) {
-      line = testLine;
-    } else {
-      textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 1; display: inline-block;">${line.trim()}</span><br>`;
-      line = word + ' ';
+    if (textElement.offsetWidth > maxWidth) {
+      addLine(); // Add line and start a new one
+    }
+
+    line += word + ' ';
+
+    // Handle existing line breaks
+    if (word.includes('\n')) {
+      addLine();
     }
   });
 
-  // Add the last line
-  textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 1; display: inline-block;">${line.trim()}</span>`;
+  if (line) {
+    addLine(); // Add any remaining text
+  }
+
+  textElement.innerHTML = formattedText; // Set the formatted text with line breaks
 }
+
 
 
   // Close the modal when clicking outside the content area
