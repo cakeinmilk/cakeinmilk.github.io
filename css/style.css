@@ -587,9 +587,9 @@ footer {
 .image-container .image-text {
     position: absolute;
     top: 50%;
-    width: 70%; /* Adjust as needed */
-    left: 15%; /* Adjust to center the block (50% - width/2) */
-    transform: translate(0, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 80%; /* Adjust as needed */
     color: #fff; /* Text color */
     background-color: #000; /* Background color */
     padding: 8px; /* Adjust padding as needed */
