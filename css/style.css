@@ -589,13 +589,17 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-	width: 80%; /* Adjust as needed */
+    width: 80%; /* Adjust as needed */
     color: #fff; /* Text color */
-    background-color: #000; /* Background color */
-    /*padding: 8px;  Adjust padding as needed */
     font-size: 1em; /* Adjust font size as needed */
     border-radius: 4px; /* Optional: Adds rounded corners to the background */
-    /* Additional styling as needed */
+}
+
+.image-container .image-text span {
+    background-color: #000; /* Background color for each line */
+    padding: 0 4px; /* Adjust padding as needed */
+    line-height: 1.6; /* Adjust line height as needed */
+    display: inline-block; /* Each line as a block */
 }
 
 .expand-button {
