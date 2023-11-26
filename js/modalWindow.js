@@ -85,18 +85,18 @@ async function handleFetchContent(fileUrl) {
       const textResponse = await fetch(textFileUrl);
       const textContent = await textResponse.text();
 
-      // Use breakLinesWordByWord to format text content
-      const formattedText = breakLinesWordByWord(textContent, modalContentElement.clientWidth);
-      
-      content = `
-        <div class="image-container">
-          <img src="${fileUrl}" style="max-width:100%;height:auto;">
-          <div class="image-text">${formattedText}</div>
-        </div>`;
-    } else {
-      // Handle text-based content
-      content = await getData(fileUrl);
-    }
+	content = `
+		<div class="image-container">
+			<img src="${fileUrl}" style="max-width:100%;height:auto;">
+			<div class="image-text"><span id="textMeasure">${textContent}</span></div>
+		</div>`;
+
+	modalContentElement.innerHTML = content;
+
+	const textMeasureElement = document.getElementById('textMeasure');
+	if (textMeasureElement) {
+		breakLinesToFitWidth(textMeasureElement, modalContentElement.clientWidth);
+	}
 
     modalContentElement.innerHTML = content;
     document.getElementById('modal').style.display = 'block';
@@ -109,37 +109,41 @@ async function handleFetchContent(fileUrl) {
   }
 }
 
-function breakLinesWordByWord(textContent, maxWidth) {
-    const words = textContent.split(/\s+/);
-    let currentLine = '';
+function breakLinesToFitWidth(textElement, maxWidth) {
+    const originalLines = textElement.innerText.split('\n'); // Split by newline
     let formattedText = '';
-    
-    words.forEach(word => {
-        const testLine = currentLine + word + ' ';
-        // Create a temporary span to measure the text width
-        const span = document.createElement('span');
-        span.style.visibility = 'hidden';
-        span.style.position = 'absolute';
-        span.innerHTML = testLine;
-        document.body.appendChild(span);
 
-        if (span.offsetWidth > maxWidth && currentLine !== '') {
-            // Add the current line with a bold 'A' to formattedText and start a new line
-            formattedText += createLineSpan(currentLine);
-            currentLine = word + ' ';
-        } else {
-            // Add the word to the current line
-            currentLine += word + ' ';
+    originalLines.forEach(line => {
+        // Create a temporary span to measure the text width
+        let tempLine = '';
+        let words = line.split(/\s+/);
+        let tempSpan = document.createElement('span');
+        document.body.appendChild(tempSpan);
+
+        words.forEach(word => {
+            tempSpan.innerText = tempLine + word + ' ';
+            if (tempSpan.offsetWidth > maxWidth && tempLine !== '') {
+                // Add the current line to formattedText and start a new one
+                formattedText += createLineSpan(tempLine.trim());
+                tempLine = word + ' ';
+            } else {
+                tempLine += word + ' ';
+            }
+        });
+
+        if (tempLine) {
+            // Add any remaining text in the line
+            formattedText += createLineSpan(tempLine.trim());
         }
-        document.body.removeChild(span);
+
+        document.body.removeChild(tempSpan);
     });
 
-    if (currentLine) {
-        // Add any remaining text with a bold 'A'
-        formattedText += createLineSpan(currentLine);
-    }
+    textElement.innerHTML = formattedText; // Set the formatted text
+}
 
-    return formattedText;
+function createLineSpan(text) {
+    return `<span style="background-color: black; padding: 4px; line-height: 1.5; display: block; margin-bottom: 10px;">${text}</span>`;
 }
 
 function createLineSpan(text) {
