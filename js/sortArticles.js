@@ -5,7 +5,7 @@ window.onload = function() {
     currentSortedColumn = 0; // Assuming 'Date' is the first column
 	sortOrder = -1; // Initially set to descending
     let icon = document.getElementById('dateIcon');
-    // No need to add 'rotate-date' class here, as the initial sort is descending
+    updateArrowDirection(0); // Update arrow direction on page load
 }
 
 let sortOrder = 1; // 1 for ascending, -1 for descending
