@@ -632,9 +632,9 @@ border: solid #fff 1px
 	z-index: 999;
 	font-family: "Lucida Console", Monaco, monospace;
 	font-size: 12px;
-	max-width: 80%; /* Optional, limit the content width */
+	/*max-width: 80%;  Optional, limit the content width */
 	overflow-y: auto; /* Optional, enable scroll for long content */
-	max-height: 80%; /* Optional, limit the content height */
+	/*max-height: 80%; /* Optional, limit the content height */
 	/* transition: transform 0.5s ease, opacity 0.5s ease; */
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
