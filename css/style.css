@@ -596,9 +596,7 @@ footer {
 }
 
 .image-container .image-text span {
-    background-color: transparent; /* Background color for each line */
     padding: 0 4px; /* Adjust padding as needed */
-    line-height: 2.6; /* Adjust line height as needed */
     display: inline-block; /* Each line as a block */
 }
 
