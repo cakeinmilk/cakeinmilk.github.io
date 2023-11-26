@@ -77,10 +77,18 @@ async function handleFetchContent(fileUrl) {
     let content;
 
     if (fileExtension === 'pdf') {
+      // Handle PDFs
       console.log('PDF link clicked:', this.getAttribute('href'));
     } else if (fileExtension === 'jpg' || fileExtension === 'jpeg') {
       // Handle JPG images
-      content = `<img src="${fileUrl}" style="max-width:100%;height:auto;">`;
+      const textFileUrl = fileUrl.replace(/\.(jpg|jpeg)$/, '.txt');
+      const textContent = await getData(textFileUrl).catch(() => 'Text not found');
+
+      content = `
+        <div class="image-container">
+          <img src="${fileUrl}" style="max-width:100%;height:auto;">
+          <span class="image-text">${textContent}</span>
+        </div>`;
     } else {
       // Handle text-based content
       content = await getData(fileUrl);
@@ -96,7 +104,6 @@ async function handleFetchContent(fileUrl) {
     modalContentElement.style.display = 'block';
   }
 }
-
 
   // Close the modal when clicking outside the content area
   document.getElementById('modal').addEventListener('click', function (event) {
