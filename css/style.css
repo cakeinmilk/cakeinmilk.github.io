@@ -586,12 +586,17 @@ footer {
 
 .image-container .image-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    left: 20%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1em;
-    /*
+    color: #fff; /* Text color */
+    background-color: #000; /* Background color */
+    padding: 8px; /* Adjust padding as needed */
+    font-size: 1em; /* Adjust font size as needed */
+    border-radius: 4px; /* Optional: Adds rounded corners to the background */
+    /* Additional styling as needed */
+}
+
 
 .expand-button {
 	background-color: #f9f9f9;
