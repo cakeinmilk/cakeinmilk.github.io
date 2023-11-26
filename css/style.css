@@ -592,16 +592,16 @@ footer {
     transform: translate(-50%, -50%);
     width: 80%; /* Adjust as needed */
     color: black; /* Text color */
-    background-color: rgba(255, 255, 255, 0.8); /* White background with 70% opacity */
+    background-color: rgba(255, 255, 255, 0.9); /* White background with opacity */
     padding: 8px; /* Padding around the text */
     font-size: 1em; /* Adjust font size as needed */
     text-align: left; /* Align text */
-    border-radius: 6px; /* Optional: Rounded corners */
+    border-radius: 6px /* Optional: Rounded corners */
 }
 
 .image-container, .image-container img, .image-container .image-text {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 .expand-button {
