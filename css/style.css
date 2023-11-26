@@ -194,9 +194,9 @@ body.dark-mode .mytabs input[type=radio]:checked + label::before, body.dark-mode
 	-webkit-border-top-right-radius: 6px;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
-	border-left: 4px solid #659dbd;
-	border-right: 4px solid #659dbd;
-	border-top: 4px solid #659dbd;
+	border-left: 1px solid #659dbd;
+	border-right: 1px solid #659dbd;
+	border-top: 1px solid #659dbd;
 	z-index: 1
 }
 
