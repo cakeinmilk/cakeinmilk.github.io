@@ -124,7 +124,7 @@ function breakLinesWordByWord(textContent, maxWidth) {
         document.body.appendChild(span);
 
         if (span.offsetWidth > maxWidth && currentLine !== '') {
-            // Add the current line to formattedText and start a new line
+            // Add the current line with a bold 'A' to formattedText and start a new line
             formattedText += createLineSpan(currentLine);
             currentLine = word + ' ';
         } else {
@@ -135,7 +135,7 @@ function breakLinesWordByWord(textContent, maxWidth) {
     });
 
     if (currentLine) {
-        // Add any remaining text
+        // Add any remaining text with a bold 'A'
         formattedText += createLineSpan(currentLine);
     }
 
@@ -143,9 +143,8 @@ function breakLinesWordByWord(textContent, maxWidth) {
 }
 
 function createLineSpan(text) {
-    return `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: block;">${text.trim()}</span>`;
+    return `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: block;">${text.trim()}<strong>A</strong></span>`;
 }
-
 
   // Close the modal when clicking outside the content area
   document.getElementById('modal').addEventListener('click', function (event) {
