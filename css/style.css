@@ -573,6 +573,26 @@ footer {
   text-decoration: none
 }
 
+.image-container {
+    position: relative;
+    display: inline-block; /* Or 'block' */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1em;
+    /*
+
 .expand-button {
 	background-color: #f9f9f9;
 	border-radius: 6px;	
