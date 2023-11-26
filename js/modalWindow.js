@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 500);
     }, 6000); // Changed the interval to 6 seconds to cover the full cycle
   });
-
+  
 async function handleFetchContent(fileUrl) {
   try {
     const fileExtension = fileUrl.split('.').pop().toLowerCase();
@@ -82,12 +82,17 @@ async function handleFetchContent(fileUrl) {
     } else if (fileExtension === 'jpg' || fileExtension === 'jpeg') {
       // Handle JPG images
       const textFileUrl = fileUrl.replace(/\.(jpg|jpeg)$/, '.txt');
-      const textContent = await getData(textFileUrl).catch(() => 'Text not found');
+      const textResponse = await fetch(textFileUrl);
+      const textContent = await textResponse.text();
+      
+      const lines = textContent.split('\n').map(line => 
+        `<span style="background-color: black; padding: 0 4px; line-height: 1.6; display: inline-block;">${line}</span><br>`
+      ).join('');
 
       content = `
         <div class="image-container">
           <img src="${fileUrl}" style="max-width:100%;height:auto;">
-          <span class="image-text">${textContent}</span>
+          <div class="image-text">${lines}</div>
         </div>`;
     } else {
       // Handle text-based content
@@ -104,7 +109,6 @@ async function handleFetchContent(fileUrl) {
     modalContentElement.style.display = 'block';
   }
 }
-
   // Close the modal when clicking outside the content area
   document.getElementById('modal').addEventListener('click', function (event) {
     if (event.target.id === 'modal') {
