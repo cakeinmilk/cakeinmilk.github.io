@@ -71,14 +71,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 6000); // Changed the interval to 6 seconds to cover the full cycle
   });
 
-  async function handleFetchContent(fileUrl) {
+async function handleFetchContent(fileUrl) {
   try {
     const fileExtension = fileUrl.split('.').pop().toLowerCase();
     let content;
 
     if (fileExtension === 'pdf') {
-      // Handle PDFs
-      content = `<iframe src="${fileUrl}" style="width:auto; height:80vh;" frameborder="0"></iframe>`;
+      // Handle PDFs using object tag
+      content = `<object data="${fileUrl}" type="application/pdf" width="100%" height="80vh">
+                    <p>Your browser does not support PDFs. 
+                    <a href="${fileUrl}">Download the PDF</a>.</p>
+                 </object>`;
     } else if (fileExtension === 'jpg' || fileExtension === 'jpeg') {
       // Handle JPG images
       content = `<img src="${fileUrl}" style="max-width:100%;height:auto;">`;
@@ -96,7 +99,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('modal').style.display = 'block';
     modalContentElement.style.display = 'block';
   }
- }
+}
+
 
   // Close the modal when clicking outside the content area
   document.getElementById('modal').addEventListener('click', function (event) {
