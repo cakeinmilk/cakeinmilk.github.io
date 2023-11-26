@@ -645,6 +645,11 @@ border: solid #fff 1px
 	backface-visibility: hidden
 }
 
+#txt-modal-content iframe {
+    width: 100% !important;
+    height: 80vh !important;
+}
+
 #txt-modal-content.dark-mode {
   background-color: #000;
   border: 1px solid #fff;

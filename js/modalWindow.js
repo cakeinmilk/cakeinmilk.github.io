@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (fileExtension === 'pdf') {
       // Handle PDFs
-      content = `<iframe src="${fileUrl}" style="width:200%; height:80vh;" frameborder="0"></iframe>`;
+      content = `<iframe src="${fileUrl}" style="width:auto; height:80vh;" frameborder="0"></iframe>`;
     } else if (fileExtension === 'jpg' || fileExtension === 'jpeg') {
       // Handle JPG images
       content = `<img src="${fileUrl}" style="max-width:100%;height:auto;">`;
