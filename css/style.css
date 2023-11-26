@@ -1016,10 +1016,10 @@ img {
     text-align: left
 }
 
-.art-header:nth-child(1), .art-cell:nth-child(1) { width: 15%; } /* Date */
+.art-header:nth-child(1), .art-cell:nth-child(1) { width: 18%; } /* Date */
 .art-header:nth-child(2), .art-cell:nth-child(2) { width: 40%; } /* Title */
-.art-header:nth-child(3), .art-cell:nth-child(3) { width: 15%; } /* Document Type */
-.art-header:nth-child(4), .art-cell:nth-child(4) { width: 30%; } /* Publication */
+.art-header:nth-child(3), .art-cell:nth-child(3) { width: 18%; } /* Document Type */
+.art-header:nth-child(4), .art-cell:nth-child(4) { width: 24%; } /* Publication */
 
 .art-header {
     font-weight: bold;
