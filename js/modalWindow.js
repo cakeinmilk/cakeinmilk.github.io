@@ -84,22 +84,15 @@ async function handleFetchContent(fileUrl) {
       const textFileUrl = fileUrl.replace(/\.(jpg|jpeg)$/, '.txt');
       const textResponse = await fetch(textFileUrl);
       const textContent = await textResponse.text();
+
+      // Use breakLinesWordByWord to format text content
+      const formattedText = breakLinesWordByWord(textContent, modalContentElement.clientWidth);
       
-      // Prepare text content for measurement
       content = `
         <div class="image-container">
           <img src="${fileUrl}" style="max-width:100%;height:auto;">
-          <div class="image-text"><span id="textMeasure">${textContent}</span></div>
+          <div class="image-text">${formattedText}</div>
         </div>`;
-      
-      // Set the content to the modal
-      modalContentElement.innerHTML = content;
-
-      // Dynamically break lines based on width
-      const textMeasureElement = document.getElementById('textMeasure');
-      if (textMeasureElement) {
-        breakLinesToFitWidth(textMeasureElement, modalContentElement.clientWidth);
-      }
     } else {
       // Handle text-based content
       content = await getData(fileUrl);
@@ -116,34 +109,41 @@ async function handleFetchContent(fileUrl) {
   }
 }
 
-function breakLinesToFitWidth(textElement, maxWidth) {
-    var measure = document.createElement("span");
-    measure.style.visibility = "hidden"; // Hide the element
-    measure.style.position = "absolute"; // Take it out of document flow
-    measure.style.whiteSpace = "nowrap"; // Prevent line breaks
-    document.body.appendChild(measure);
-
-    const words = textElement.innerText.split(/\s+/); // Split by whitespace
-    let line = '';
+function breakLinesWordByWord(textContent, maxWidth) {
+    const words = textContent.split(/\s+/);
+    let currentLine = '';
     let formattedText = '';
-
+    
     words.forEach(word => {
-        measure.innerText = line + word + ' '; // Set text for measurement
+        const testLine = currentLine + word + ' ';
+        // Create a temporary span to measure the text width
+        const span = document.createElement('span');
+        span.style.visibility = 'hidden';
+        span.style.position = 'absolute';
+        span.innerHTML = testLine;
+        document.body.appendChild(span);
 
-        if (measure.offsetWidth > maxWidth) {
-            formattedText += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span><strong>A</strong><br>`;
-            line = '';
+        if (span.offsetWidth > maxWidth && currentLine !== '') {
+            // Add the current line to formattedText and start a new line
+            formattedText += createLineSpan(currentLine);
+            currentLine = word + ' ';
+        } else {
+            // Add the word to the current line
+            currentLine += word + ' ';
         }
-
-        line += word + ' ';
+        document.body.removeChild(span);
     });
 
-    if (line) {
-        formattedText += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span><strong>A</strong>`;
+    if (currentLine) {
+        // Add any remaining text
+        formattedText += createLineSpan(currentLine);
     }
 
-    textElement.innerHTML = formattedText; // Set the formatted text
-    document.body.removeChild(measure); // Remove the temporary element
+    return formattedText;
+}
+
+function createLineSpan(text) {
+    return `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: block;">${text.trim()}</span>`;
 }
 
 
