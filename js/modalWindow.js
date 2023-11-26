@@ -129,13 +129,13 @@ function breakLinesToFitWidth(textElement, maxWidth) {
     if (textElement.offsetWidth <= maxWidth) {
       line = testLine;
     } else {
-      textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span><br>`;
+      textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 1; display: inline-block;">${line.trim()}</span><br>`;
       line = word + ' ';
     }
   });
 
   // Add the last line
-  textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span>`;
+  textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 1; display: inline-block;">${line.trim()}</span>`;
 }
 
 function breakLinesToFitWidth(textElement, maxWidth) {
@@ -151,13 +151,13 @@ function breakLinesToFitWidth(textElement, maxWidth) {
     if (textElement.offsetWidth <= maxWidth) {
       line = testLine;
     } else {
-      textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span><br>`;
+      textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 1; display: inline-block;">${line.trim()}</span><br>`;
       line = word + ' ';
     }
   });
 
   // Add the last line
-  textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span>`;
+  textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 1; display: inline-block;">${line.trim()}</span>`;
 }
 
 
