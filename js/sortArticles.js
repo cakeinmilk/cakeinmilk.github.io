@@ -1,6 +1,6 @@
 // Call this function when the page loads
 window.onload = function() {
-    updateArrowDirection(0); // Initialize arrow for 'Date' column
+    updateArrowDirection(1); // Initialize arrow for 'Date' column
     document.getElementById('selectAll').checked = true; // Ensure 'Select All' is checked by default
     toggleSelectAll(document.getElementById('selectAll')); // Apply the default state of 'Select All'
 	let icon = document.getElementById('dateIcon');
