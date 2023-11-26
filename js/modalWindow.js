@@ -117,7 +117,6 @@ async function handleFetchContent(fileUrl) {
 }
 
 function breakLinesToFitWidth(textElement, maxWidth) {
-    // Create a temporary element for measuring text width
     var measure = document.createElement("span");
     measure.style.visibility = "hidden"; // Hide the element
     measure.style.position = "absolute"; // Take it out of document flow
@@ -132,8 +131,7 @@ function breakLinesToFitWidth(textElement, maxWidth) {
         measure.innerText = line + word + ' '; // Set text for measurement
 
         if (measure.offsetWidth > maxWidth) {
-            // If line exceeds maxWidth, start a new line
-            formattedText += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span><br>`;
+            formattedText += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span><strong>A</strong><br>`;
             line = '';
         }
 
@@ -141,8 +139,7 @@ function breakLinesToFitWidth(textElement, maxWidth) {
     });
 
     if (line) {
-        // Add the last line
-        formattedText += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span>`;
+        formattedText += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span><strong>A</strong>`;
     }
 
     textElement.innerHTML = formattedText; // Set the formatted text
