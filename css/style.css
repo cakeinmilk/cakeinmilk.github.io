@@ -559,17 +559,17 @@ footer {
   text-decoration: underline
 }
 
-.art-cell a, .art-link a {
+.art-cell a, .showtitle a {
   color: #8d8741;
   text-decoration: none;
   font-weight: 700
 }
 
-.art-cell a.dark-mode, .art-link a.dark-mode {
+.art-cell a.dark-mode, .showtitle a.dark-mode {
 	color: #fff
 }
 
-.art-cell a:hover, .art-link a:hover {
+.art-cell a:hover, .showtitle a:hover {
   text-decoration: none
 }
 

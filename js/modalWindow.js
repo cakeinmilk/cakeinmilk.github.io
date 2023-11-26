@@ -78,22 +78,28 @@ async function handleFetchContent(fileUrl) {
 
     if (fileExtension === 'pdf') {
       // Handle PDFs
-      console.log('PDF link clicked:', this.getAttribute('href'));
+      console.log('PDF link clicked:', fileUrl);
     } else if (fileExtension === 'jpg' || fileExtension === 'jpeg') {
       // Handle JPG images
       const textFileUrl = fileUrl.replace(/\.(jpg|jpeg)$/, '.txt');
       const textResponse = await fetch(textFileUrl);
       const textContent = await textResponse.text();
       
-      const lines = textContent.split('\n').map(line => 
-        `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line}</span><br>`
-      ).join('');
-
+      // Prepare text content for measurement
       content = `
         <div class="image-container">
           <img src="${fileUrl}" style="max-width:100%;height:auto;">
-          <div class="image-text">${lines}</div>
+          <div class="image-text"><span id="textMeasure">${textContent}</span></div>
         </div>`;
+      
+      // Set the content to the modal
+      modalContentElement.innerHTML = content;
+
+      // Dynamically break lines based on width
+      const textMeasureElement = document.getElementById('textMeasure');
+      if (textMeasureElement) {
+        breakLinesToFitWidth(textMeasureElement, modalContentElement.clientWidth);
+      }
     } else {
       // Handle text-based content
       content = await getData(fileUrl);
@@ -109,6 +115,52 @@ async function handleFetchContent(fileUrl) {
     modalContentElement.style.display = 'block';
   }
 }
+
+function breakLinesToFitWidth(textElement, maxWidth) {
+  const words = textElement.innerText.split(' ');
+  let line = '';
+  
+  textElement.innerHTML = ''; // Clear current text
+
+  words.forEach(word => {
+    const testLine = line + word + ' ';
+    textElement.innerText = testLine;
+
+    if (textElement.offsetWidth <= maxWidth) {
+      line = testLine;
+    } else {
+      textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span><br>`;
+      line = word + ' ';
+    }
+  });
+
+  // Add the last line
+  textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span>`;
+}
+
+function breakLinesToFitWidth(textElement, maxWidth) {
+  const words = textElement.innerText.split(' ');
+  let line = '';
+  
+  textElement.innerHTML = ''; // Clear current text
+
+  words.forEach(word => {
+    const testLine = line + word + ' ';
+    textElement.innerText = testLine;
+
+    if (textElement.offsetWidth <= maxWidth) {
+      line = testLine;
+    } else {
+      textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span><br>`;
+      line = word + ' ';
+    }
+  });
+
+  // Add the last line
+  textElement.innerHTML += `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: inline-block;">${line.trim()}</span>`;
+}
+
+
   // Close the modal when clicking outside the content area
   document.getElementById('modal').addEventListener('click', function (event) {
     if (event.target.id === 'modal') {
