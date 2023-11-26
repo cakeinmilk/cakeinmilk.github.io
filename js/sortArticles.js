@@ -2,8 +2,8 @@
 window.onload = function() {
     document.getElementById('selectAll').checked = true;
     toggleSelectAll(document.getElementById('selectAll'));
-    sortOrder = -1; // Initially set to descending
-	updateArrowDirection(currentSortedColumn); // Initialize arrow for 'Date' column
+    currentSortedColumn = 0; // Assuming 'Date' is the first column
+	sortOrder = -1; // Initially set to descending
     let icon = document.getElementById('dateIcon');
     // No need to add 'rotate-date' class here, as the initial sort is descending
 }
@@ -35,13 +35,12 @@ function sortTable(columnIndex) {
 
 
 function updateArrowDirection(columnIndex) {
-    // Check if the clicked column is 'Date'
+    let icon = document.getElementById('dateIcon');
     if (columnIndex === 0) { // Date column
-        let icon = document.getElementById('dateIcon');
-        if (sortOrder === 1) {
-            icon.classList.remove('rotate-date'); // Ascending sort
+        if (sortOrder === -1) {
+            icon.classList.add('rotate-date'); // Descending sort, arrow pointing down
         } else {
-            icon.classList.add('rotate-date'); // Descending sort
+            icon.classList.remove('rotate-date'); // Ascending sort, arrow pointing up
         }
     }
 }
