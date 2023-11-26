@@ -657,6 +657,11 @@ border: solid #fff 1px
   color: #fff
 }
 
+embed {
+    width: 100% !important;
+    height: auto !important;
+}
+
 .headlinks-modal {
   display: none;
   position: fixed;
