@@ -898,13 +898,13 @@ border: solid #fff 1px
 	padding: 50px;
 	font-size: 14px
 }
-.divTableRow2 .shownotes {
+.divTableRow2 .art-links {
   padding-right: 50px;
   padding-left: 50px;
   text-align:right
 }
 
-.divTableRow2 a, .shownotes a {
+.divTableRow2 a, .art-links a {
   color: #8d8741;
   text-decoration: none;
   font-weight: bold
