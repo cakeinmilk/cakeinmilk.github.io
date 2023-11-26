@@ -72,82 +72,38 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   
 async function handleFetchContent(fileUrl) {
-  try {
-    const fileExtension = fileUrl.split('.').pop().toLowerCase();
-    let content;
+    try {
+        const fileExtension = fileUrl.split('.').pop().toLowerCase();
+        let content;
 
-    if (fileExtension === 'pdf') {
-      // Handle PDFs
-      console.log('PDF link clicked:', fileUrl);
-    } else if (fileExtension === 'jpg' || fileExtension === 'jpeg') {
-      // Handle JPG images
-      const textFileUrl = fileUrl.replace(/\.(jpg|jpeg)$/, '.txt');
-      const textResponse = await fetch(textFileUrl);
-      const textContent = await textResponse.text();
+        if (fileExtension === 'pdf') {
+            // Handle PDFs
+            console.log('PDF link clicked:', fileUrl);
+        } else if (fileExtension === 'jpg' || fileExtension === 'jpeg') {
+            // Handle JPG images
+            const textFileUrl = fileUrl.replace(/\.(jpg|jpeg)$/, '.txt');
+            const textResponse = await fetch(textFileUrl);
+            const textContent = await textResponse.text();
 
-	content = `
-		<div class="image-container">
-			<img src="${fileUrl}" style="max-width:100%;height:auto;">
-			<div class="image-text"><span id="textMeasure">${textContent}</span></div>
-		</div>`;
-
-	modalContentElement.innerHTML = content;
-
-	const textMeasureElement = document.getElementById('textMeasure');
-	if (textMeasureElement) {
-		breakLinesToFitWidth(textMeasureElement, modalContentElement.clientWidth);
-	}
-
-    modalContentElement.innerHTML = content;
-    document.getElementById('modal').style.display = 'block';
-    modalContentElement.style.display = 'block';
-  } catch (error) {
-    console.error('Error:', error);
-    modalContentElement.innerText = 'Error: Unable to load the content.';
-    document.getElementById('modal').style.display = 'block';
-    modalContentElement.style.display = 'block';
-  }
-}
-
-function breakLinesToFitWidth(textElement, maxWidth) {
-    const originalLines = textElement.innerText.split('\n'); // Split by newline
-    let formattedText = '';
-
-    originalLines.forEach(line => {
-        // Create a temporary span to measure the text width
-        let tempLine = '';
-        let words = line.split(/\s+/);
-        let tempSpan = document.createElement('span');
-        document.body.appendChild(tempSpan);
-
-        words.forEach(word => {
-            tempSpan.innerText = tempLine + word + ' ';
-            if (tempSpan.offsetWidth > maxWidth && tempLine !== '') {
-                // Add the current line to formattedText and start a new one
-                formattedText += createLineSpan(tempLine.trim());
-                tempLine = word + ' ';
-            } else {
-                tempLine += word + ' ';
-            }
-        });
-
-        if (tempLine) {
-            // Add any remaining text in the line
-            formattedText += createLineSpan(tempLine.trim());
+            content = `
+                <div class="image-container">
+                    <img src="${fileUrl}" style="max-width:100%;height:auto;">
+                    <div class="image-text">${textContent}</div>
+                </div>`;
+        } else {
+            // Handle text-based content
+            content = await getData(fileUrl);
         }
 
-        document.body.removeChild(tempSpan);
-    });
-
-    textElement.innerHTML = formattedText; // Set the formatted text
-}
-
-function createLineSpan(text) {
-    return `<span style="background-color: black; padding: 4px; line-height: 1.5; display: block; margin-bottom: 10px;">${text}</span>`;
-}
-
-function createLineSpan(text) {
-    return `<span style="background-color: black; padding: 0 4px; line-height: 2.6; display: block;">${text.trim()}<strong>A</strong></span>`;
+        modalContentElement.innerHTML = content;
+        document.getElementById('modal').style.display = 'block';
+        modalContentElement.style.display = 'block';
+    } catch (error) {
+        console.error('Error:', error);
+        modalContentElement.innerText = 'Error: Unable to load the content.';
+        document.getElementById('modal').style.display = 'block';
+        modalContentElement.style.display = 'block';
+    }
 }
 
   // Close the modal when clicking outside the content area
