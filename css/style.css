@@ -902,13 +902,13 @@ border: solid #fff 1px
 	padding: 50px;
 	font-size: 14px
 }
-.divTableRow2 .art-links {
+.divTableRow2 .art-links, .biog-links {
   padding-right: 50px;
   padding-left: 50px;
   text-align:right
 }
 
-.divTableRow2 a, .art-links a {
+.divTableRow2 a, .art-links a, .biog-links a {
   color: #8d8741;
   text-decoration: none;
   font-weight: bold
@@ -918,7 +918,7 @@ border: solid #fff 1px
   text-decoration: underline
 }
 
-.divTableRow2 a.dark-mode, .art-links a.dark-mode {
+.divTableRow2 a.dark-mode, .art-links a.dark-mode, .biog-links a.dark-mode {
 	color: #fff
 }
 
