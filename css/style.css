@@ -1038,6 +1038,43 @@ img {
     transform: translateY(-50%)
 }
 
+.biog-table {
+    display: table;
+    width: 100%
+}
+
+.biog-header-row, .biog-table-row {
+    display: table-row
+}
+
+.biog-cell {
+    display: table-cell;
+    padding: 8px;
+    text-align: left
+}
+
+.biog-header:nth-child(1), .biog-cell:nth-child(1) { width: 18%; } /* Date */
+.biog-header:nth-child(2), .biog-cell:nth-child(2) { width: 18%; } /* Author */
+.biog-header:nth-child(3), .biog-cell:nth-child(3) { width: 40%; } /* Title */
+.biog-header:nth-child(4), .biog-cell:nth-child(4) { width: 24%; } /* Link */
+
+.biog-header {
+    font-weight: bold;
+	position: relative;
+    cursor: pointer;
+	display: table-cell;
+    padding: 8px;
+    text-align: left
+}
+
+.biog-header:after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
 .dropdown {
     display: none; /* Initially hidden */
     position: absolute;
