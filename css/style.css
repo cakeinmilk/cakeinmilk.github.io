@@ -1055,8 +1055,8 @@ img {
 
 .biog-header:nth-child(1), .biog-cell:nth-child(1) { width: 18%; } /* Date */
 .biog-header:nth-child(2), .biog-cell:nth-child(2) { width: 18%; } /* Author */
-.biog-header:nth-child(3), .biog-cell:nth-child(3) { width: 40%; } /* Title */
-.biog-header:nth-child(4), .biog-cell:nth-child(4) { width: 24%; } /* Link */
+.biog-header:nth-child(3), .biog-cell:nth-child(3) { width: 50%; } /* Title */
+.biog-header:nth-child(4), .biog-cell:nth-child(4) { width: 14%; } /* Link */
 
 .biog-header {
     font-weight: bold;
